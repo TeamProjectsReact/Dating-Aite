@@ -4,12 +4,12 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 
 const HomePage = () => {
-    // https://wallpapercave.com/wp/wp6367798.jpg
+    // https://img3.wallspic.com/previews/4/2/0/3/3/133024/133024-hug-sunlight-backlighting-love-affection-500x.jpg
   return (
-    <div className='flex flex-col min-h-screen lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp6367798.jpg)] bg-center bg-cover lg:h-screen h-screen w-full'>
+    <div className='lg:py-[3%] py-12 lg:px-16 bg-[url(https://img3.wallspic.com/previews/4/2/0/3/3/133024/133024-hug-sunlight-backlighting-love-affection-500x.jpg)] bg-center bg-cover lg:h-screen h-screen w-full'>
         <Navbar />
         <div className="">
-            hi al
+            
         </div>
 
 
