@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='text-white inline-block align-bottom'>
+    <div className='text-white'>
         Footer
     </div>
   )
