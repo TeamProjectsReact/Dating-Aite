@@ -9,13 +9,11 @@ const HomePage = () => {
     <div className='lg:py-[4%] py-12 lg:px-16 bg-[url(https://wallpapercave.com/wp/wp6367798.jpg)] bg-center bg-cover lg:h-screen h-screen w-full'>
         <Navbar />
         <div className="py-40">
-            HI all
+            hi al
         </div>
 
-        
-        <div className="content-end">
-            <Footer />
-        </div>        
+
+        <Footer />
     </div>
   )
 }
