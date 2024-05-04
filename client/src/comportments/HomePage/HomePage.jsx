@@ -22,7 +22,7 @@ const HomePage = () => {
       {name: "Members", value: "20", icon: ""},
       {name: "Datings", value: "20", icon: ""},
       {name: "Love Stories", value: "20", icon: ""},
-      {name: "Members", value: "20", icon: ""} 
+      {name: "Posts", value: "20", icon: ""} 
     ]
 
   return (
