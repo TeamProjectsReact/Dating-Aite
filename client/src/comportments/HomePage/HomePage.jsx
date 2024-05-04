@@ -115,7 +115,7 @@ const HomePage = () => {
                   viewData.map((dataView) => {
                     return (
                       <div className="">
-                        <button className="border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.name}</button>
+                        <button onClick={() => HeadleButtonClick(dataView.btnValue)} className="border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.name}</button>
                         
                       </div>
                     )
