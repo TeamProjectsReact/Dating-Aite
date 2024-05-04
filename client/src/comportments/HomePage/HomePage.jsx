@@ -40,6 +40,7 @@ const HomePage = () => {
 
       <div className="text-center my-24">
         <h1 className="text-pink-500 text-5xl font-semibold">WELCOME</h1>
+        <hr className='w-12 border border-gray-500 text-center mx-[48%]'/>
       </div>
 
       <Footer />
