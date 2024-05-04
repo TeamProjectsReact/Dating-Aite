@@ -34,9 +34,9 @@ const HomePage = () => {
 
     const viewData = [
       {name: "Women", icons: <MyIcon name='female'></MyIcon>, btnValue: "Women"},
-      {name: "Mens", icons: <MyIcon name='female'></MyIcon>, btnValue: "Mens"},
-      {name: "Love Stories", icons: <MyIcon name='female'></MyIcon>, btnValue: "LStories"},
-      {name: "Posts", icons: <MyIcon name='female'></MyIcon>, btnValue: "Posts"},
+      {name: "Mens", icons: <MyIcon name='male'></MyIcon>, btnValue: "Mens"},
+      {name: "Love Stories", icons: <MyIcon name='heart'></MyIcon>, btnValue: "LStories"},
+      {name: "Posts", icons: <MyIcon name='documents'></MyIcon>, btnValue: "Posts"},
     ]
 
   return (
@@ -127,14 +127,7 @@ const HomePage = () => {
       </div>
 
 
-      <div className="text-center my-24">
-        <Fade>
-          <h1 className="text-pink-500 text-5xl font-semibold love-title">New Comments</h1>
-          <div className="">
 
-          </div>
-        </Fade>
-      </div>
 
       <Footer />
     </div>
