@@ -21,9 +21,9 @@ const HomePage = () => {
 
     const countData = [
       {name: "Members", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
-      {name: "Datings", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
+      {name: "Datings", value: "20", icon: <MyIcon name='storefront' size='large'></MyIcon>},
       {name: "Love Stories", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
-      {name: "Posts", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>} 
+      {name: "Posts", value: "20", icon: <MyIcon name='documents' size='large'></MyIcon>} 
     ]
 
   return (
