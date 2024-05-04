@@ -13,6 +13,12 @@ const HomePage = () => {
     // https://wallpapercave.com/wp/wp9199217.jpg
     // #1b0802
 
+    const [buttonValue, SetButtonValue] = useState(0)
+    const HeadleButtonClick = (clickValue) => {
+        SetButtonValue(clickValue)   
+    }
+    
+
     const styles = {
       background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
       backgroundSize: 'cover',
