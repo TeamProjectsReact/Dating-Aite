@@ -126,10 +126,9 @@ const HomePage = () => {
         </Fade>
       </div>
 
-
-
-
-      <Footer />
+      <Fade>
+        <Footer />
+      </Fade>
     </div>
   )
 }
