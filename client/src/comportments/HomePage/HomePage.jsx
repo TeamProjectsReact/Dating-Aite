@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Fade } from "react-awesome-reveal";
 import Footer from './Footer';
 import Navbar from './Navbar';
@@ -110,12 +110,13 @@ const HomePage = () => {
       <div className="text-center my-24">
         <Fade>
           <div className="">
-              <div className="flex">
+              <div className="my-20 mx-40 flex justify-between">
                 {
                   viewData.map((dataView) => {
                     return (
                       <div className="">
-                        <h1 className="">{dataView.name}</h1>
+                        <button className="border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.name}</button>
+                        
                       </div>
                     )
                   })
