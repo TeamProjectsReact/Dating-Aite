@@ -11,18 +11,29 @@ const HomePage = () => {
     // https://wallpapercave.com/wp/wp9199177.jpg
     // https://wallpapercave.com/wp/wp9199217.jpg
     // #1b0802
+
+    const styles = {
+      background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
+      background-
+    }
   return (
     <div className="">
       
-      <div className='lg:py-[3%] py-12 lg:px-16 px-8 bg-[url(https://wallpapercave.com/wp/wp8675176.jpg)] lg:h-[80vh] h-screen w-full lg:bg-center bg-right bg-cover lg:h-screen h-screen w-full'>
-        <Navbar />
-        <div className="">
-          <div className="lg:mx-16 mx-0">
-            <h1 className="love-title text-white text-5xl">Find your <span className='text-pink-500'>Best, Trusted</span> <br /> and <span className='text-pink-500'>Lovelyness</span> partner</h1>
-            <p className="text-white py-2">The Best Trusted and Most use Dating Site</p>
-
-            <button className='border border-pink-500 my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Be a Member and Find Your Love</button>
+      <div className='lg:py-[3%] py-12 lg:px-16 px-8 lg:h-[80vh] h-full w-full lg:bg-center bg-right bg-cover lg:h-screen h-screen w-full' style={styles}>
+        {/* <Navbar /> */}
+        <div className="lg:grid grid-cols-2 gap-4">
+          <div className="my-16">
+            <div className="lg:mx-16 mx-0">
+              <h1 className="love-title text-white text-5xl">Find your <span className='text-pink-500'>Best, Trusted</span> <br /> and <span className='text-pink-500'>Lovelyness</span> partner</h1>
+              <p className="text-white py-2 font-semibold">The Best Trusted and Most use Dating Site</p>
+              <p className="text-white my-6">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum libero ab ratione totam, inventore sit, iure, ullam tempore magni eaque animi a delectus minima saepe ipsam qui possimus fugit.
+                Esse reiciendis aperiam, vitae optio corporis totam eos explicabo facilis, assumenda tempora minima. Alias id laborum ducimus odit dolores rerum quo in debitis pariatur. Delectus labore dolore corrupti hic pariatur!
+              </p>
+              <button className='bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Be a Member and Find Your Love</button>
+            </div>
           </div>
+          <div className=""></div>
         </div>
 
 
