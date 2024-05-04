@@ -51,7 +51,9 @@ const HomePage = () => {
 
       <div className="">
         <Fade>
-          <p>I will gently appear as I enter the viewport</p>
+          <div className="">
+            
+          </div>
         </Fade>
       </div>
 
