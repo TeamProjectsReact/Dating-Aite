@@ -27,10 +27,10 @@ const HomePage = () => {
     ]
 
     const viewData = [
-      {name: "Women", icons: "", btnValue: "Women"},
-      {name: "Mens", icons: "", btnValue: "Mens"},
-      {name: "Love Stories", icons: "", btnValue: "LStories"},
-      {name: "Posts", icons: "", btnValue: "Posts"},
+      {name: "Women", icons: <MyIcon name='female'></MyIcon>, btnValue: "Women"},
+      {name: "Mens", icons: <MyIcon name='female'></MyIcon>, btnValue: "Mens"},
+      {name: "Love Stories", icons: <MyIcon name='female'></MyIcon>, btnValue: "LStories"},
+      {name: "Posts", icons: <MyIcon name='female'></MyIcon>, btnValue: "Posts"},
     ]
 
   return (
