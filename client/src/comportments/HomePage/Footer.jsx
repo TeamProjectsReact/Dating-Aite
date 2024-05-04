@@ -4,13 +4,13 @@ import LoveImg from '../../assets/lvoe.png'
 const Footer = () => {
   
   const styles = {
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }
 
   return (
-    <footer className='text-white bg-pink-500 py-20 px-24' style={styles}>
+    <footer className='text-white bg-pink-500 py-20 px-24 bg-center bg-cover' style={styles}>
       <div className="lg:flex">
         <div className="w-full mx-8">
           {/* <h1 className="pb-8 font-semibold text-2xl">Lovly Datings</h1> */}
