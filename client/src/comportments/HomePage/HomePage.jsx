@@ -78,8 +78,12 @@ const HomePage = () => {
 
       <div className="my-24">
           <div className="lg:flex">
-            <div className="mx-8 w-full"></div>
-            <div className="mx-8 w-full"></div>
+            <div className="w-full bg-pink-500 py-36">
+
+            </div>
+            <div className="h-auto w-full bg-[url(https://wallpapercave.com/wp/wp8829589.jpg)] bg-cover bg-center">
+              <h1 className="">Our Features for Members</h1>
+            </div>
           </div>
       </div>
 
