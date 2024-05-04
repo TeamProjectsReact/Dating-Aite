@@ -1,5 +1,6 @@
 import React from 'react'
 import LoveImg from '../../assets/lvoe.png'
+import MyIcon from '@reacticons/ionicons';
 
 const Footer = () => {
   
@@ -22,6 +23,12 @@ const Footer = () => {
         </div>
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">Our Services</h1>
+          <div className="">
+            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>GuideLines for Dating</span></p>
+            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>Real Accounts</span></p>
+            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>Best Destinations</span></p>
+            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>help to Find life Partner</span></p>
+          </div>
         </div>
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">More About</h1>
