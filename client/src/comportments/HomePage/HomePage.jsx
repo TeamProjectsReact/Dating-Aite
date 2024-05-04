@@ -19,7 +19,10 @@ const HomePage = () => {
     }
 
     const countData = [
-      {name: "Members", value: "20", icon: ""}
+      {name: "Members", value: "20", icon: ""},
+      {name: "Members", value: "20", icon: ""},
+      {name: "Members", value: "20", icon: ""},
+      {name: "Members", value: "20", icon: ""} 
     ]
 
   return (
