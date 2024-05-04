@@ -20,8 +20,8 @@ const HomePage = () => {
 
     const countData = [
       {name: "Members", value: "20", icon: ""},
-      {name: "Members", value: "20", icon: ""},
-      {name: "Members", value: "20", icon: ""},
+      {name: "Datings", value: "20", icon: ""},
+      {name: "Love Stories", value: "20", icon: ""},
       {name: "Members", value: "20", icon: ""} 
     ]
 
@@ -59,12 +59,13 @@ const HomePage = () => {
 
       <div className="">
         <Fade>
-          <div className="lg:grid grid-cols-2 gap-4">
+          <div className="lg:grid grid-cols-4 gap-4 mx-16 my-20 text-center">
             {
               countData.map((data) => {
                 return (
                   <div className="">
-                    {data.name}
+                    <h1 className="text-2xl text-pink-500 love-title">{data.name}</h1>
+                    <p className="my-2 font-semibold text-gray-500 text-xl">{data.value}</p>
                   </div>
                 )
               })
