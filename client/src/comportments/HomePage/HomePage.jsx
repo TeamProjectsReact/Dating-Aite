@@ -17,6 +17,11 @@ const HomePage = () => {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     }
+
+    const countData = [
+      {name: "Members", value: "20", icon: ""}
+    ]
+
   return (
     <div className="">
       
@@ -52,7 +57,7 @@ const HomePage = () => {
       <div className="">
         <Fade>
           <div className="">
-            
+
           </div>
         </Fade>
       </div>
