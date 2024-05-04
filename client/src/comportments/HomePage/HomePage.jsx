@@ -14,7 +14,7 @@ const HomePage = () => {
   return (
     <div className="">
       
-      <div className='lg:py-[3%] py-12 lg:px-16 px-8 bg-[#1b0802] lg:h-[80vh] h-screen w-full lg:bg-center bg-right bg-cover lg:h-screen h-screen w-full'>
+      <div className='lg:py-[3%] py-12 lg:px-16 px-8 bg-[url(https://wallpapercave.com/wp/wp8675176.jpg)] lg:h-[80vh] h-screen w-full lg:bg-center bg-right bg-cover lg:h-screen h-screen w-full'>
         <Navbar />
         <div className="">
           <div className="lg:mx-16 mx-0">
