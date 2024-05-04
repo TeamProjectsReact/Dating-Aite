@@ -33,11 +33,20 @@ const Footer = () => {
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">More About</h1>
           <div className="">
-            
+            <p className="my-2">Datings</p>
+            <p className="my-2">Love Stories</p>
+            <p className="my-2">Destinations</p>
+            <p className="my-2">GuideLines</p>
+            <p className="my-2">Posts</p>
           </div>
         </div>
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">Contact</h1>
+          <div className="">
+            <p className="text-md my-2">+94 711758851</p>
+            <p className="text-md my-2">test@exmple.com</p>
+            <p className="text-md my-2">Test Street, Test</p>
+          </div>
         </div>
       </div>
     </footer>
