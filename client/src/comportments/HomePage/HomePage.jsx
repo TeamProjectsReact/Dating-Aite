@@ -14,7 +14,8 @@ const HomePage = () => {
 
     const styles = {
       background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
-      background-
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
     }
   return (
     <div className="">
@@ -34,11 +35,13 @@ const HomePage = () => {
             </div>
           </div>
           <div className=""></div>
-        </div>
-
-
-        
+        </div>        
       </div>
+
+      <div className="text-center my-24">
+        <h1 className="text-pink-500 text-5xl font-semibold">WELCOME</h1>
+      </div>
+
       <Footer />
     </div>
   )
