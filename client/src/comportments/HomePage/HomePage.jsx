@@ -26,6 +26,16 @@ const HomePage = () => {
       {name: "Posts", value: "20", icon: <MyIcon name='documents' size='large'></MyIcon>} 
     ]
 
+    const viewData = [
+      {name: "Women", icons: "", btnValue: ""},
+      {name: "Mens", icons: "", btnValue: ""},
+      {name: "Love Stories", icons: "", btnValue: ""},
+      {name: "Posts", icons: "", btnValue: ""},
+      {name: "Women", icons: "", btnValue: ""},
+      {name: "Women", icons: "", btnValue: ""},
+      
+    ]
+
   return (
     <div className="">
       
@@ -96,9 +106,18 @@ const HomePage = () => {
 
       <div className="text-center my-24">
         <Fade>
-          <h1 className="text-pink-500 text-5xl font-semibold love-title">New Comments</h1>
           <div className="">
             
+          </div>
+        </Fade>
+      </div>
+
+
+      <div className="text-center my-24">
+        <Fade>
+          <h1 className="text-pink-500 text-5xl font-semibold love-title">New Comments</h1>
+          <div className="">
+
           </div>
         </Fade>
       </div>
