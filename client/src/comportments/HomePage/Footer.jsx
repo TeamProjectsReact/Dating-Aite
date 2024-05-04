@@ -4,7 +4,7 @@ import LoveImg from '../../assets/lvoe.png'
 const Footer = () => {
   
   const styles = {
-    background: 'linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
+    background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }
@@ -21,13 +21,13 @@ const Footer = () => {
           <p className="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt molestiae distinctio consectetur vel? Odio corporis earum maxime dolorem temporibus est facilis consectetur, aut maiores dolorum inventore magni sapiente repellat?</p>
         </div>
         <div className="w-full mx-8">
-          <h1 className="pb-8 font-semibold text-2xl">Lovly Datings</h1>
+          <h1 className="pb-8 font-semibold text-2xl">Our Services</h1>
         </div>
         <div className="w-full mx-8">
-          <h1 className="pb-8 font-semibold text-2xl">Lovly Datings</h1>
+          <h1 className="pb-8 font-semibold text-2xl">More About</h1>
         </div>
         <div className="w-full mx-8">
-          <h1 className="pb-8 font-semibold text-2xl">Lovly Datings</h1>
+          <h1 className="pb-8 font-semibold text-2xl">Contact</h1>
         </div>
       </div>
     </footer>
