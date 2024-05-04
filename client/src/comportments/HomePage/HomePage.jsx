@@ -49,7 +49,9 @@ const HomePage = () => {
         </p>
       </div>
 
-      
+      <div className="">
+        
+      </div>
 
       <Footer />
     </div>
