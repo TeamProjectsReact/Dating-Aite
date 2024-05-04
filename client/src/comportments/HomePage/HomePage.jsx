@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import Footer from './Footer';
 import Navbar from './Navbar';
 import LoveImage from '../../assets/lvoe.png'
+import { Fade } from "react-awesome-reveal";
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -50,7 +51,9 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        
+        <Fade>
+          <p>I will gently appear as I enter the viewport</p>
+        </Fade>
       </div>
 
       <Footer />
