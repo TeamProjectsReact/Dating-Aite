@@ -64,7 +64,8 @@ const HomePage = () => {
             {
               countData.map((data) => {
                 return (
-                  <div className="">
+                  <div className="lg:my-0 my-8">
+                    <p className="text-4xl text-pink-500">{data.icon}</p>
                     <h1 className="text-2xl text-pink-500 love-title">{data.name}</h1>
                     <p className="my-2 font-semibold text-gray-500 text-xl">{data.value}</p>
                   </div>
@@ -73,6 +74,10 @@ const HomePage = () => {
             }
           </div>
         </Fade>
+      </div>
+
+      <div className="text-center my-24">
+        <h1 className="text-pink-500 text-5xl font-semibold love-title">Features</h1>
       </div>
 
       <Footer />
