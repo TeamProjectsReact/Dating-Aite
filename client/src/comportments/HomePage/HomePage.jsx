@@ -76,8 +76,11 @@ const HomePage = () => {
         </Fade>
       </div>
 
-      <div className="text-center my-24">
-        <h1 className="text-pink-500 text-5xl font-semibold love-title">Features</h1>
+      <div className="my-24">
+          <div className="lg:flex">
+            <div className="mx-8 w-full"></div>
+            <div className="mx-8 w-full"></div>
+          </div>
       </div>
 
       <Footer />
