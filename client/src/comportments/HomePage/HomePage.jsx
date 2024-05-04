@@ -97,6 +97,9 @@ const HomePage = () => {
       <div className="text-center my-24">
         <Fade>
           <h1 className="text-pink-500 text-5xl font-semibold love-title">New Comments</h1>
+          <div className="">
+            
+          </div>
         </Fade>
       </div>
 
