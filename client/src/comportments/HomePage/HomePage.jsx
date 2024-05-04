@@ -59,8 +59,16 @@ const HomePage = () => {
 
       <div className="">
         <Fade>
-          <div className="">
-
+          <div className="lg:grid grid-cols-2 gap-4">
+            {
+              countData.map((data) => {
+                return (
+                  <div className="">
+                    {data.name}
+                  </div>
+                )
+              })
+            }
           </div>
         </Fade>
       </div>
