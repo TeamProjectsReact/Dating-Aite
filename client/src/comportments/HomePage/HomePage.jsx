@@ -40,7 +40,7 @@ const HomePage = () => {
 
       <div className="text-center my-24">
         <h1 className="text-pink-500 text-5xl font-semibold">WELCOME</h1>
-        <p className="text-gray-500">
+        <p className="text-gray-500 mx-12 py-8 font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus aliquid fuga totam iusto, fugit rem velit quod. Ut qui, in magnam quae culpa nisi expedita rerum mollitia blanditiis facere.
           Nesciunt aliquid labore nobis hic facere minus repellat veniam est eveniet tempora voluptates doloribus quia officiis rem esse quis, veritatis obcaecati perferendis eos cum deserunt ex, nam vitae. Et, minus.
           Dolorum asperiores, ullam sunt officia aut culpa. Id deserunt quaerat veniam quidem sint eaque delectus iure libero sapiente veritatis velit molestiae dolore nemo, perspiciatis placeat ab obcaecati animi recusandae quia.
@@ -48,6 +48,8 @@ const HomePage = () => {
           Harum, illum minima. Quisquam aut culpa ut mollitia cupiditate dolores obcaecati nulla molestias? Odio quia nemo, earum necessitatibus nostrum, soluta, debitis ipsum amet maxime optio explicabo dignissimos ullam vero porro.
         </p>
       </div>
+
+      
 
       <Footer />
     </div>
