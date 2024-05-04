@@ -3,6 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import Footer from './Footer';
 import Navbar from './Navbar';
 import LoveImage from '../../assets/lvoe.png'
+import MyIcon from '@reacticons/ionicons';
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -19,10 +20,10 @@ const HomePage = () => {
     }
 
     const countData = [
-      {name: "Members", value: "20", icon: ""},
-      {name: "Datings", value: "20", icon: ""},
-      {name: "Love Stories", value: "20", icon: ""},
-      {name: "Posts", value: "20", icon: ""} 
+      {name: "Members", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
+      {name: "Datings", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
+      {name: "Love Stories", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>},
+      {name: "Posts", value: "20", icon: <MyIcon name='heart' size='large'></MyIcon>} 
     ]
 
   return (
