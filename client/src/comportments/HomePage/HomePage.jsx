@@ -110,7 +110,17 @@ const HomePage = () => {
       <div className="text-center my-24">
         <Fade>
           <div className="">
-            
+              <div className="flex">
+                {
+                  viewData.map((dataView) => {
+                    return (
+                      <div className="">
+                        <h1 className="">{dataView.name}</h1>
+                      </div>
+                    )
+                  })
+                }
+              </div>
           </div>
         </Fade>
       </div>
