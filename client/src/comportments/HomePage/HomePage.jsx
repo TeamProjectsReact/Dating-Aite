@@ -76,15 +76,19 @@ const HomePage = () => {
         </Fade>
       </div>
 
-      <div className="my-24">
-          <div className="lg:flex">
-            <div className="w-full bg-pink-500 py-36">
-
+      <div className="">
+          <Fade>
+            <div className="my-24">
+                <div className="lg:flex">
+                  <div className="w-full bg-pink-500 py-36 px-16 text-white">
+                    <p className="text-2xl "><MyIcon name='heart'></MyIcon> <span className="px-1"> Guidlines for Dating</span></p>
+                  </div>
+                  <div className="h-auto w-full bg-[url(https://wallpapercave.com/wp/wp8829589.jpg)] bg-cover bg-center">
+                    <h1 className="py-24 text-center font-semibold text-4xl text-pink-500 love-title">Our Features for Members</h1>
+                  </div>
+                </div>
             </div>
-            <div className="h-auto w-full bg-[url(https://wallpapercave.com/wp/wp8829589.jpg)] bg-cover bg-center">
-              <h1 className="">Our Features for Members</h1>
-            </div>
-          </div>
+          </Fade>
       </div>
 
       <Footer />
