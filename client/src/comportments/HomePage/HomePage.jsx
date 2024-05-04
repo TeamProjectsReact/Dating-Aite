@@ -3,7 +3,6 @@ import { Fade } from "react-awesome-reveal";
 import Footer from './Footer';
 import Navbar from './Navbar';
 import LoveImage from '../../assets/lvoe.png'
-import { Fade } from "react-awesome-reveal";
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -40,7 +39,7 @@ const HomePage = () => {
       </div>
 
       <div className="text-center my-24">
-        <h1 className="text-pink-500 text-5xl font-semibold">WELCOME</h1>
+        <h1 className="text-pink-500 text-5xl font-semibold love-title">WELCOME</h1>
         <p className="text-gray-500 mx-12 py-8 font-semibold">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloribus aliquid fuga totam iusto, fugit rem velit quod. Ut qui, in magnam quae culpa nisi expedita rerum mollitia blanditiis facere.
           Nesciunt aliquid labore nobis hic facere minus repellat veniam est eveniet tempora voluptates doloribus quia officiis rem esse quis, veritatis obcaecati perferendis eos cum deserunt ex, nam vitae. Et, minus.
