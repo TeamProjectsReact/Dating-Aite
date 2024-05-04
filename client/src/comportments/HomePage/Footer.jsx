@@ -24,14 +24,17 @@ const Footer = () => {
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">Our Services</h1>
           <div className="">
-            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>GuideLines for Dating</span></p>
-            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>Real Accounts</span></p>
-            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>Best Destinations</span></p>
-            <p className=""><MyIcon name='heart'></MyIcon> <span className='pl-2'>help to Find life Partner</span></p>
+            <p className="my-2"><MyIcon name='heart'></MyIcon> <span className='pl-1'>GuideLines for Dating</span></p>
+            <p className="my-2"><MyIcon name='heart'></MyIcon> <span className='pl-1'>Real Accounts</span></p>
+            <p className="my-2"><MyIcon name='heart'></MyIcon> <span className='pl-1'>Best Destinations</span></p>
+            <p className="my-2"><MyIcon name='heart'></MyIcon> <span className='pl-1'>help to Find life Partner</span></p>
           </div>
         </div>
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">More About</h1>
+          <div className="">
+            
+          </div>
         </div>
         <div className="w-full mx-8">
           <h1 className="pb-8 font-semibold text-2xl">Contact</h1>
