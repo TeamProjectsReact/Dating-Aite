@@ -66,7 +66,23 @@ app.post('/SignUp', (req, res) => {
     if(err) throw err
 
     if(result.length === 0){
+      bcrypt.hash(req.body.password, 10, (err, HashPass) => {
+        if(err) throw err
 
+        if(HashPass){
+          const sql = "INSERT INTO users() VALUES (?)"
+          const userRole = "user"
+          const join_at = new Date()
+          
+          const values = [
+            req.body.username,
+            req.body.email,
+            HashPass,
+            userRole,
+            join_at
+          ]
+        }
+      })
     }
     else{
       res.json({Error: "User Alredy in Database"})
