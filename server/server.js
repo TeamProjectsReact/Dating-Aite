@@ -59,7 +59,8 @@ app.use(express.static('public'));
 // all end pints start
 
 app.post('/SignUp', (req, res) => {
-  console.log(req.body)
+  // console.log(req.body)
+  
 })
 
 
