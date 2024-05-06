@@ -55,6 +55,7 @@ const HomePage = () => {
     const logout = () => {
       localStorage.clear()
       navigate('/')
+      window.location.reload()
     }
 
   return (
