@@ -80,11 +80,9 @@ const HomePage = () => {
                           <button className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Find Your Love</button>
                         </Link>
                         <Link to={'/Dashboard'}>
-                          <button className='mx-2 bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Logout For Now</button>
+                          <button className='mx-2 bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Dashboard</button>
                         </Link>                        
-                      </div>
-
-                      
+                      </div>                      
                     )
                   }
                   else{
@@ -115,6 +113,13 @@ const HomePage = () => {
                     <Fade>
                       <SignIn />
                     </Fade>
+                  )
+                }
+                if(RoleUser !== null && EmailUser !== null){
+                  return (
+                    <div className="">
+                      
+                    </div>
                   )
                 }
               })()
