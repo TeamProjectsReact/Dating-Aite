@@ -34,40 +34,42 @@ const Dashboard = () => {
   }
 
   const styles = {
-    borderRadius: '0 10px 10px 0',
     boxShadow: '2px 0 2px #DEDEDE',
   }
   return (
     <div className="bg-[#f4ebfe] h-auto w-full">
     <div className="flex">
-        <div style={styles} className={`duration-500 relative border-r-2 border-blue-300 bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
+        <div style={styles} className={`my-4 mx-4 rounded-xl pl-[-40px]duration-500 relative border-r-2 border-blue-200 bg-purple-300
+         h-auto pl-4 py-4 ${sideOpen ? "w-72" : "w-20" }`}>
             <div className="flex">
-                <div className="text-[#3B71CA] pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
+                <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
             </div>
             <div className="">
                 {sideOpen ? <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-6"/>
+                    <h1 className="text-center my-4 font-semibold text-2xl love-title">Dating App</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-8 ml-4"/>
                 </div> : <div></div>}
             </div>
-            <div className={`pl-2 text-xl text-gray-400 duration-500 hover:text-[#3B71CA] cursor-pointer`}>
-                    {sideOpen ? <div className="flex pl-2 pt-2">
+            <div className={`pl-2 text-xl text-white duration-500 hover:text-white cursor-pointer`}>
+            <p className="text-center mt-4" onClick={() => HeadleButtonClick(0)}>SuperAdmin</p>
+                    {sideOpen ? <div className="pl-2 pt-2">
                         {
                             (() => {
                                 if(RoleUser === "SuperAdmin"){
                                     return (
-                                        <p className="" onClick={() => HeadleButtonClick(0)}>SuperAdmin</p>
+                                        <p className="text-center text-sm" >SuperAdmin</p>
                                     )                            
                                 }
                                 else if(RoleUser === "user"){
                                     return (                                               
-                                        <p className="" onClick={() => HeadleButtonClick(0)}>UserDashboard</p>
+                                        <p className="" >UserDashboard</p>
                                     )    
                                 }
                             })()
                         }
                         
-                    </div> : <Icons name="speedometer" onClick={() => HeadleButtonClick(0)}></Icons> }
+                    </div> : <Icons name="speedometer" ></Icons> }
             </div>
             <hr className="mt-2 mr-4 border-b-1 border-blue-300"/>
             <div className="">
@@ -76,7 +78,7 @@ const Dashboard = () => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-gray-400 duration-500 hover:text-[#3B71CA]  ${sideOpen ? "px-6" : "px-1" }`}>                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-[#3B71CA]  ${sideOpen ? "px-6" : "px-1" }`}>                        
                                         <p>{sidem.icon}</p>
                                         <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
@@ -102,9 +104,9 @@ const Dashboard = () => {
         </div>
         <div className="w-full mr-2">
                 {/* nav bar start */}
-                <div className="py-8 rounded-2xl bg-white my-1 px-4 w-full mr-2 shadow-xl">
+                <div className="py-8 rounded-2xl my-1 px-4 w-full mr-2 ">
                   <div className="">
-
+                    Dating App
                   </div>
                 </div>
             </div>
