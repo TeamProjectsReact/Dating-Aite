@@ -48,9 +48,9 @@ const Dashboard = () => {
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
             </div>
             <div className="">
-                {sideOpen ? <div className="px-8">
+                {sideOpen ? <div className="mx-8 px-8">
 
-                    <img src="https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?t=st=1714988150~exp=1714991750~hmac=e1d2db921ee318bd0e8ffd7b7bd6a5021809718f5199a0e4044919a05cba8821&w=740" className="rounded-full"/>
+                    <img src="https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?t=st=1714988150~exp=1714991750~hmac=e1d2db921ee318bd0e8ffd7b7bd6a5021809718f5199a0e4044919a05cba8821&w=740" className="h-40 w-auto rounded-full"/>
                 </div> : <div></div>}
             </div>
             <div className={`pl-2 text-xl text-white duration-500 hover:text-purple-700 cursor-pointer `}>
