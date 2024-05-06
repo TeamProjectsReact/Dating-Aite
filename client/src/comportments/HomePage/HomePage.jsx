@@ -10,7 +10,7 @@ import LoveStories from '../HomeData/LoveStories';
 import Posts from '../HomeData/Posts';
 import SignIn from '../SignInSignUp/SignIn';
 import SignUp from '../SignInSignUp/SignUp';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import  secureLocalStorage  from  "react-secure-storage"
 
 const HomePage = () => {
@@ -30,7 +30,7 @@ const HomePage = () => {
     const HeadleButtonClick = (clickValue) => {
         SetButtonValue(clickValue)   
     }
-    
+    const navigate = useNavigate()
 
     const styles = {
       background: 'linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://wallpapercave.com/wp/wp8675176.jpg")',
@@ -52,6 +52,11 @@ const HomePage = () => {
       {name: "Posts", icons: <MyIcon name='documents'></MyIcon>, btnValue: "Posts"},
     ]
 
+    const logout = () => {
+      localStorage.clear()
+      navigate('/')
+    }
+
   return (
     <div className="">
       
@@ -69,9 +74,14 @@ const HomePage = () => {
                 (() => {
                   if(RoleUser !== null && EmailUser !== null){
                     return (
-                      <Link>
-                         <button className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Find Your Love</button>
-                      </Link>
+                      <div className="">
+                        <Link>
+                          <button className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Find Your Love</button>
+                        </Link>
+                        <button onClick={logout} className='mx-2 bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Logout For Now</button>
+                      </div>
+
+                      
                     )
                   }
                   else{
