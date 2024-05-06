@@ -106,15 +106,15 @@ const HomePage = () => {
           </Fade>
       </div>
 
-      {/* <div className="text-center my-24">
+      <div className="text-center my-24">
         <Fade>
           <div className="">
-              <div className="my-20 mx-40 flex justify-between">
+              <div className="my-20 lg:mx-40 mx-8 lg:flex justify-between">
                 {
                   viewData.map((dataView) => {
                     return (
                       <div className="">
-                        <button onClick={() => HeadleButtonClick(dataView.btnValue)} className="border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.icons} <span className='mt-2'>{dataView.name}</span></button>
+                        <button onClick={() => HeadleButtonClick(dataView.btnValue)} className="w-full lg:my-0 my-2 border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.icons} <span className='mt-2'>{dataView.name}</span></button>
                         
                       </div>
                     )
@@ -123,7 +123,7 @@ const HomePage = () => {
               </div>
           </div>
         </Fade>
-      </div> */}
+      </div>
 
       <Fade>
         <Footer />
