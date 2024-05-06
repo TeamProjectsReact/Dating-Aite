@@ -106,7 +106,7 @@ const HomePage = () => {
           </Fade>
       </div>
 
-      <div className="text-center my-24">
+      <div className="my-24 lg:mx-20 mx-8">
         <Fade>
           <div className="">
               <div className="my-20 lg:mx-40 mx-8 lg:flex justify-between">
@@ -119,6 +119,9 @@ const HomePage = () => {
                     )
                   })
                 }
+              </div>
+              <div className="">
+                {buttonValue}
               </div>
           </div>
         </Fade>
