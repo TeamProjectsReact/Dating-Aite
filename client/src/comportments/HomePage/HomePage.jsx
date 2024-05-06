@@ -143,7 +143,6 @@ const HomePage = () => {
       </div>
 
       <div className="">
-        <Fade>
           <div className="lg:grid grid-cols-4 gap-4 mx-16 my-20 text-center">
             {
               countData.map((data) => {
@@ -157,7 +156,6 @@ const HomePage = () => {
               })
             }
           </div>
-        </Fade>
       </div>
 
       <div className="">
