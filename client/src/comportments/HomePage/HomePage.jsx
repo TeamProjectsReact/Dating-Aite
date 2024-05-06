@@ -8,7 +8,7 @@ import Girls from '../HomeData/Girls';
 import Mens from '../HomeData/Mens';
 import LoveStories from '../HomeData/LoveStories';
 import Posts from '../HomeData/Posts';
-import SignIn from '../SignInSignUp/SignUp';
+import SignIn from '../SignInSignUp/SignIn';
 import SignUp from '../SignInSignUp/SignUp';
 
 const HomePage = () => {
