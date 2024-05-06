@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const SignUp = () => {
     const headleBack = () => {
         window.location.reload()
     }
+
+     const [SignInData, SetSignInData] = useState({
+        username: '',
+        email: '',
+        password: ''
+     })
 
   return (
     <div>
