@@ -42,7 +42,7 @@ const HomePage = () => {
   return (
     <div className="">
       
-      <div className='lg:py-[3%] py-12 lg:px-16 px-8 lg:h-[80vh] h-full w-full lg:bg-center bg-right bg-cover lg:h-screen' style={styles}>
+      <div className='lg:py-[3%] py-12 lg:px-16 px-8 lg:h-[80vh] h-auto w-full lg:bg-center bg-right bg-cover lg:h-screen' style={styles}>
         {/* <Navbar /> */}
         <div className="lg:grid grid-cols-2 gap-4">
           <div className="my-16">
