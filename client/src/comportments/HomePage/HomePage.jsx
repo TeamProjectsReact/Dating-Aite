@@ -19,8 +19,11 @@ const HomePage = () => {
     // https://wallpapercave.com/wp/wp9199217.jpg
     // #1b0802
 
-    
 
+    //curent login user
+    const RoleUser = secureLocalStorage.getItem("Login1");
+    const EmailUser = secureLocalStorage.getItem("login2");
+    
     const [buttonValue, SetButtonValue] = useState(0)
     const HeadleButtonClick = (clickValue) => {
         SetButtonValue(clickValue)   
