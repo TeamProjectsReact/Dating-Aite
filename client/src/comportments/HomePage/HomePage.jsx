@@ -56,10 +56,20 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum libero ab ratione totam, inventore sit, iure, ullam tempore magni eaque animi a delectus minima saepe ipsam qui possimus fugit.
                 Esse reiciendis aperiam, vitae optio corporis totam eos explicabo facilis, assumenda tempora minima. Alias id laborum ducimus odit dolores rerum quo in debitis pariatur. Delectus labore dolore corrupti hic pariatur!
               </p>
-              <button className='bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Be a Member and Find Your Love</button>
+              <button onClick={() => HeadleButtonClick("SignUp")} className='bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Be a Member and Find Your Love</button>
             </div>
           </div>
-          <div className=""></div>
+          <div className="">
+            {
+              (() => {
+                if(buttonValue === "SignUp"){
+                  return (
+                    <p className="">hi allllllll</p>
+                  )
+                }
+              })()
+            }
+          </div>
         </div>        
       </div>
 
