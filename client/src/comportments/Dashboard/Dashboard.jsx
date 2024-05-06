@@ -29,22 +29,22 @@ const Dashboard = () => {
       {id: 8, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"}, 
       {id: 9, name: "All Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "AllBooks"},               
   ]
-    const navBar = [
-      {name: "Notifications", link: "#", desc: "notifications", icon: <Icons name="notifications"></Icons>},
-      {name: "Logout", desc: "logout", icon: <Icons name="power"></Icons>},        
-    ]
+  const navBar = [
+    {name: "Notifications", link: "#", desc: "notifications", icon: <Icons name="notifications"></Icons>},
+    {name: "Logout", desc: "logout", icon: <Icons name="power"></Icons>},        
+]
 
-    const headlelogout = () => {
-        localStorage.clear()
-        navigate('/')
-        window.location.reload()
-    }
+  const headlelogout = () => {
+      localStorage.clear()
+      navigate('/')
+      window.location.reload()
+  }
   return (
-    <div className="bg-purple-100 h-auto w-full">
+    <div className="bg-purple-200 py-2 h-auto w-full">
     <div className="flex">
-        <div className={`duration-500 relative border-r-2 border-gray-300 bg-white h-auto pl-4 py-4  ${sideOpen ? "w-64" : "w-20" }`}>
+        <div className={`text-white duration-500 relative border-r-2 border-blue-300 shadow-md my-1 mx-2 rounded-2xl bg-purple-300 h-auto pl-4 py-4 ${sideOpen ? "w-96" : "w-20" }`}>
             <div className="flex">
-                <div className="text-[#3B71CA] pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
+                <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
             </div>
             <div className="">
@@ -52,7 +52,7 @@ const Dashboard = () => {
                     <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-6"/>
                 </div> : <div></div>}
             </div>
-            <div className={`pl-2 text-xl text-gray-400 duration-500 hover:text-[#3B71CA] cursor-pointer`}>
+            <div className={`pl-2 text-xl text-gray-400 duration-500 hover:text-white cursor-pointer`}>
                     {sideOpen ? <div className="flex pl-2 pt-2">
                         {
                             (() => {
@@ -71,14 +71,14 @@ const Dashboard = () => {
                         
                     </div> : <Icons name="speedometer" onClick={() => HeadleButtonClick(0)}></Icons> }
             </div>
-            <hr className="mt-2 mr-4 border-b-1 border-gray-300"/>
+            <hr className="mt-2 mr-4 border-b-1 border-blue-300"/>
             <div className="">
                 {
                     allUserSide.map((sidem) => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA] ">                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-white ">                        
                                         <p>{sidem.icon}</p>
                                         <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
@@ -89,7 +89,7 @@ const Dashboard = () => {
                             if(sidem.id === 8 ){
                                 return (
                                     <Link to={sidem.link}>
-                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA]">                        
+                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-white duration-500 hover:text-purple-500">                        
                                             <p>{sidem.icon}</p>
                                             <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                         </div>
