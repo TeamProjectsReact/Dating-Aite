@@ -104,6 +104,12 @@ app.post('/SignUp', (req, res) => {
 
 })
 
+// SignIn endpoint
+
+app.post('/SignIn', (req, res) => {
+  
+})
+
 
 // all end points end
 
