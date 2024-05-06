@@ -69,12 +69,16 @@ const HomePage = () => {
               (() => {
                 if(buttonValue === "SignUp"){
                   return (
-                    <SignUp />
+                    <Fade>
+                      <SignUp />
+                    </Fade>
                   )
                 }
                 if(buttonValue === "SignIn"){
                   return (
-                    <SignIn />
+                    <Fade>
+                      <SignIn />
+                    </Fade>
                   )
                 }
               })()
