@@ -8,6 +8,7 @@ import Girls from '../HomeData/Girls';
 import Mens from '../HomeData/Mens';
 import LoveStories from '../HomeData/LoveStories';
 import Posts from '../HomeData/Posts';
+import SignIn from '../SignInSignUp/SignIn';
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -64,7 +65,7 @@ const HomePage = () => {
               (() => {
                 if(buttonValue === "SignUp"){
                   return (
-                    <p className="">hi allllllll</p>
+                    <SignIn />
                   )
                 }
               })()
