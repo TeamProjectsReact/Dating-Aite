@@ -24,25 +24,23 @@ const Dashboard = () => {
       {id: 3, name: "Magazine ", link: "#", icon: <Icons name="newspaper" size="large"></Icons>, btnValue: "Magazine"},
       {id: 4, name: "Articles", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
       {id: 5, name: "Thesis", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
-      {id: 6, name: "Borrowed Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Borrowed Books"},
-      {id: 7, name: "Users", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "Users"},
-      {id: 8, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"}, 
-      {id: 9, name: "All Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "AllBooks"},               
+      
   ]
-  const navBar = [
-    {name: "Notifications", link: "#", desc: "notifications", icon: <Icons name="notifications"></Icons>},
-    {name: "Logout", desc: "logout", icon: <Icons name="power"></Icons>},        
-]
 
   const headlelogout = () => {
       localStorage.clear()
       navigate('/')
       window.location.reload()
   }
+
+  const styles = {
+    borderRadius: '0 10px 10px 0',
+    boxShadow: '2px 0 2px #DEDEDE',
+  }
   return (
-    <div className="bg-gray-200 py-2 h-auto w-full">
+    <div className="bg-[#f4ebfe] h-auto w-full">
     <div className="flex">
-        <div className={`duration-500 relative border-r-2 border-blue-300 shadow-md my-1 mx-2 rounded-2xl bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
+        <div style={styles} className={`duration-500 relative border-r-2 border-blue-300 bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
             <div className="flex">
                 <div className="text-[#3B71CA] pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
@@ -78,7 +76,7 @@ const Dashboard = () => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA] ">                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-gray-400 duration-500 hover:text-[#3B71CA]  ${sideOpen ? "px-6" : "px-1" }`}>                        
                                         <p>{sidem.icon}</p>
                                         <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
@@ -108,20 +106,7 @@ const Dashboard = () => {
                     
                     <div className="flex justify-between">
                         <p className="">LMS</p>
-                        <div className="flex ">
-                            {
-                                navBar.map((nav) => {
-                                    if(nav.desc === "logout"){
-                                        return (
-                                            <div onClick={headlelogout} className="px-2 text-red-500 flex cursor-pointer">
-                                                <p>{nav.name}</p>
-                                                <p className="pl-2 pt-[2px]">{nav.icon}</p>                                               
-                                            </div>
-                                        )
-                                    }
-                                })
-                            }
-                        </div>
+
                     </div>                      
                 </div>
             </div>
