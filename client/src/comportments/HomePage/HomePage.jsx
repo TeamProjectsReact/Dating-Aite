@@ -117,8 +117,8 @@ const HomePage = () => {
                 }
                 if(RoleUser !== null && EmailUser !== null){
                   return (
-                    <div className="">
-                      
+                    <div className="bg-white">
+                      <h1 className="">Welcome Back</h1>
                     </div>
                   )
                 }
