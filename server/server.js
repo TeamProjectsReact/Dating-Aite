@@ -85,6 +85,15 @@ app.post('/SignUp', (req, res) => {
             is_active,
             is_lock
           ]
+
+          connection.query(sql, [values], (err, result) => {
+            if(err){
+              return res.json({Error: "Internal Server ERROR"})
+            }
+            else{
+              return res.json({Status: "Success"})
+            }
+          })
         }
       })
     }
