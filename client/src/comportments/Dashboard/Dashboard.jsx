@@ -106,8 +106,13 @@ const Dashboard = () => {
         <div className="w-full mr-2">
                 {/* nav bar start */}
                 <div className="py-8 rounded-2xl my-1 px-4 w-full mr-2 ">
-                  <div className="">
-                    Dating App
+                  <div className="flex justify-between">
+                    <div className="text-2xl text-purple-500 love-title">
+                      Dating App
+                    </div>
+                    <div className="mr-8 text-2xl text-purple-500 love-title">
+                      Dating App
+                    </div>
                   </div>
                 </div>
             </div>
