@@ -27,7 +27,7 @@ const SignUp = () => {
                     <button className='text-white font-semibold bg-pink-500 rounded py-2 px-8 w-full duration-500 hover:bg-pink-600'>Create Account</button>
                 </div>
             </form>
-        </div>
+          </div>
     </div>
   )
 }
