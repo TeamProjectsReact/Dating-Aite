@@ -1,11 +1,14 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import  secureLocalStorage  from  "react-secure-storage"
 
 const SignIn = () => {
     const headleBack = () => {
         window.location.reload()
     }
+
+    const navigate = useNavigate()
 
     const [SignINData, SetSignINData] = useState({
         email: '',
