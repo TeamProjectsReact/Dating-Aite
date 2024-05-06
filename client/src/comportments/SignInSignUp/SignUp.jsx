@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 
 const SignUp = () => {
     const headleBack = () => {
         window.location.reload()
     }
 
-     const [SignInData, SetSignInData] = useState({
+     const [SignUpData, SetSignUpData] = useState({
         username: '',
         email: '',
         password: ''
@@ -13,6 +14,7 @@ const SignUp = () => {
 
      const headleSubmit = (e) => {
         e.preventDefault()
+        axios.post('http://localhost:8081/SignUp', SignInData)
      }
 
   return (
@@ -24,17 +26,17 @@ const SignUp = () => {
                 <div className="my-4">
                     <label htmlFor="" className='text-pink-500 my-2'>Username : </label>
                     <input type="text" name="" id="" className="pl-2 w-full h-12 border border-pink-500 rounded text-pink-500" required placeholder='Enter Username' 
-                    onChange={e => SetSignInData({...SignInData, username:e.target.value})}/>
+                    onChange={e => SetSignUpData({...SignUpData, username:e.target.value})}/>
                 </div>
                 <div className="my-4">
                     <label htmlFor="" className='text-pink-500 my-2'>Email : </label>
                     <input type="email" name="" id="" className="pl-2 w-full h-12 border border-pink-500 rounded text-pink-500" required placeholder='Enter Email' 
-                    onChange={e => SetSignInData({...SignInData, email:e.target.value})}/>
+                    onChange={e => SetSignUpData({...SignUpData, email:e.target.value})}/>
                 </div>
                 <div className="m-4y">
                     <label htmlFor="" className='text-pink-500 my-2'>Password : </label>
                     <input type="password" name="" id="" className="pl-2 w-full h-12 border border-pink-500 rounded text-pink-500" required placeholder='Enter Password' 
-                    onChange={e => SetSignInData({...SignInData, password:e.target.value})}/>
+                    onChange={e => SetSignUpData({...SignUpData, password:e.target.value})}/>
                 </div>
                 <div className="my-6">
                     <button type='submit' className='text-white font-semibold bg-pink-500 rounded py-2 px-8 w-full duration-500 hover:bg-pink-600'>Create Account</button>
