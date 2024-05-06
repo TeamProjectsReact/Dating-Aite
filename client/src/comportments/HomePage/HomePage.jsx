@@ -42,10 +42,9 @@ const HomePage = () => {
   return (
     <div className="">
       
-      <div className='lg:py-[3%] py-12 lg:px-16 px-8 h-auto w-full' style={styles}>
-        {/* <Navbar /> */}
+      <div className='py-14 lg:px-16 px-4' style={styles}>
         <div className="lg:grid grid-cols-2 gap-4">
-          <div className="my-16">
+          <div className="">
             <div className="lg:mx-16 mx-0">
               <h1 className="love-title text-white text-5xl">Find your <span className='text-pink-500'>Best, Trusted</span> <br /> and <span className='text-pink-500'>Lovelyness</span> partner</h1>
               <p className="text-white py-2 font-semibold">The Best Trusted and Most use Dating Site</p>

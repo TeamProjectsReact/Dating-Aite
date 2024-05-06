@@ -11,7 +11,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className='text-white bg-pink-500 pt-20 pb-5 px-24 bg-center bg-cover' style={styles}>
+    <footer className='text-white bg-pink-500 pt-20 pb-5 lg:px-24 px-8 bg-center bg-cover' style={styles}>
       <div className="lg:flex">
         <div className="w-full mx-8">
           {/* <h1 className="pb-8 font-semibold text-2xl">Lovly Datings</h1> */}
@@ -49,7 +49,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className='border border-white mt-16 mx-20'/>
+      <hr className='border border-white '/>
       <p className="text-center my-2 text-xl">
         &copy; The Lovly Datings - 2024 || Developed and Design by JehanKandy and Anupa Gamage
       </p>
