@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignIn = () => {
+const SignUp = () => {
     const headleBack = () => {
         window.location.reload()
     }
@@ -32,4 +32,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn
+export default SignUp
