@@ -109,7 +109,8 @@ const Dashboard = () => {
             <div className="lg:flex justify-between">
               <div className="w-full">
                 <form>
-                  <input type="text" name="" id="" className="h-14 w-1/6 rounded bg-purple-300 text-white pl-2" placeholder="Search"/>
+                  <input type="text" name="" id="" className=" placeholder-white h-14 lg:w-1/6 w-full rounded bg-purple-300 text-white pl-2" placeholder="Search"/>
+                  <button type="submit" className="mx-2 bg-purple-500 h-14 px-8 rounded text-white">Search</button>
                 </form>
               </div>
               <div className="">
