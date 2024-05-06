@@ -42,7 +42,7 @@ const HomePage = () => {
   return (
     <div className="">
       
-      <div className='lg:py-[3%] py-12 lg:px-16 px-8 h-auto w-auto' style={styles}>
+      <div className='lg:py-[3%] py-12 lg:px-16 px-8 h-auto w-full' style={styles}>
         {/* <Navbar /> */}
         <div className="lg:grid grid-cols-2 gap-4">
           <div className="my-16">
@@ -107,7 +107,7 @@ const HomePage = () => {
           </Fade>
       </div>
 
-      <div className="text-center my-24">
+      {/* <div className="text-center my-24">
         <Fade>
           <div className="">
               <div className="my-20 mx-40 flex justify-between">
@@ -124,7 +124,7 @@ const HomePage = () => {
               </div>
           </div>
         </Fade>
-      </div>
+      </div> */}
 
       <Fade>
         <Footer />
