@@ -121,9 +121,9 @@ app.post('/SignIn', (req, res) => {
 
         if(PassMatch) {
           //generate JWT Token
-          
+
           const token = jwt.sign(
-              {email: result[0].email, role: result[0].role, is_active: result[0].is_active, is_lock: result[0].is_lock},
+              {email: result[0].Email, role: result[0].Role, is_active: result[0].is_active, is_lock: result[0].is_lock},
               'your-secret-key',
               {expiresIn: '1h'}
           );
