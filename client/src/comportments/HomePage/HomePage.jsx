@@ -10,6 +10,7 @@ import LoveStories from '../HomeData/LoveStories';
 import Posts from '../HomeData/Posts';
 import SignIn from '../SignInSignUp/SignIn';
 import SignUp from '../SignInSignUp/SignUp';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -66,7 +67,11 @@ const HomePage = () => {
               {
                 (() => {
                   if(RoleUser !== null && EmailUser !== null){
-
+                    return (
+                      <Link>
+                         <button className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Find Your Love</button>
+                      </Link>
+                    )
                   }
                   else{
                     return (
