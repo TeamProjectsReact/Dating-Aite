@@ -61,7 +61,7 @@ app.use(express.static('public'));
 app.post('/SignUp', (req, res) => {
   // console.log(req.body)
 
-  const checkSql = "SELECT * FROM users WHRER email = ?"
+  const checkSql = "SELECT * FROM users WHERE Email = ?"
   connection.query(checkSql, [req.body.email], (err, result) => {
     if(err) throw err
 
