@@ -115,7 +115,6 @@ const HomePage = () => {
                     return (
                       <div className="">
                         <button onClick={() => HeadleButtonClick(dataView.btnValue)} className="w-full lg:my-0 my-2 border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.icons} <span className='mt-2'>{dataView.name}</span></button>
-                        
                       </div>
                     )
                   })
