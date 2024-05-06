@@ -11,6 +11,7 @@ import Posts from '../HomeData/Posts';
 import SignIn from '../SignInSignUp/SignIn';
 import SignUp from '../SignInSignUp/SignUp';
 import { Link } from 'react-router-dom';
+import  secureLocalStorage  from  "react-secure-storage"
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
