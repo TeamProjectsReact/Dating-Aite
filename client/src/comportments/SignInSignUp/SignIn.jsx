@@ -20,7 +20,7 @@ const SignIn = () => {
                     <input type="password" name="" id="" className="pl-2 w-full h-12 border border-pink-500 rounded text-pink-500" required placeholder='Enter Password' />
                 </div>
                 <div className="my-6">
-                    <button type='submit' className='text-white font-semibold bg-pink-500 rounded py-2 px-8 w-full duration-500 hover:bg-pink-600'>Create Account</button>
+                    <button type='submit' className='text-white font-semibold bg-pink-500 rounded py-2 px-8 w-full duration-500 hover:bg-pink-600'>Sign In</button>
                 </div>
             </form>
         </div>
