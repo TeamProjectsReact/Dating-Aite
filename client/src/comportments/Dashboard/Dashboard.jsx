@@ -29,10 +29,7 @@ const Dashboard = () => {
       {id: 8, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"}, 
       {id: 9, name: "All Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "AllBooks"},               
   ]
-  const navBar = [
-    {name: "Notifications", link: "#", desc: "notifications", icon: <Icons name="notifications"></Icons>},
-    {name: "Logout", desc: "logout", icon: <Icons name="power"></Icons>},        
-]
+
 
   const headlelogout = () => {
       localStorage.clear()
@@ -114,20 +111,6 @@ const Dashboard = () => {
                     
                     <div className="flex justify-between">
                         <p className="">LMS</p>
-                        <div className="flex ">
-                            {
-                                navBar.map((nav) => {
-                                    if(nav.desc === "logout"){
-                                        return (
-                                            <div onClick={headlelogout} className="px-2 text-red-500 flex cursor-pointer">
-                                                <p>{nav.name}</p>
-                                                <p className="pl-2 pt-[2px]">{nav.icon}</p>                                               
-                                            </div>
-                                        )
-                                    }
-                                })
-                            }
-                        </div>
                     </div>                      
                 </div>
             </div>
