@@ -19,7 +19,7 @@ const Dashboard = () => {
       SetButtonValue(clickValue)   
   }
   const allUserSide = [
-      {id: 1, name: "Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Books"},
+      {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
       {id: 2, name: "Journals", link: "#", icon: <Icons name="document-text" size="large"></Icons>, btnValue: "Journals"},
       {id: 3, name: "Magazine ", link: "#", icon: <Icons name="newspaper" size="large"></Icons>, btnValue: "Magazine"},
       {id: 4, name: "Articles", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
@@ -39,8 +39,7 @@ const Dashboard = () => {
   return (
     <div className="bg-[#f4ebfe] h-auto w-full">
     <div className="flex">
-        <div style={styles} className={`my-4 mx-4 rounded-xl pl-[-40px]duration-500 relative border-r-2 border-blue-200 bg-purple-300
-         h-auto pl-4 py-4 ${sideOpen ? "w-72" : "w-20" }`}>
+        <div style={styles} className={`my-4 mx-4 rounded-xl pl-[-40px]duration-500 relative border-r-2 border-blue-200 bg-purple-300 duration-500 h-auto pl-4 py-4 ${sideOpen ? "w-72" : "w-20" }`}>
             <div className="flex">
                 <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
@@ -79,7 +78,7 @@ const Dashboard = () => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-purple-700  ${sideOpen ? "px-6" : "px-1" }`}>                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-purple-700 hover:ml-3  ${sideOpen ? "px-6" : "px-1" }`}>                        
                                         <p>{sidem.icon}</p>
                                         <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
@@ -110,8 +109,8 @@ const Dashboard = () => {
                     <div className="text-2xl text-purple-500 love-title">
                       Dating App
                     </div>
-                    <div className="mr-8 text-2xl text-purple-500 love-title">
-                      Dating App
+                    <div className="mr-8">
+                      <button onClick={headlelogout} className="bg-purple-600 py-4 px-8 rounded text-white duration-500 hover:mr-2">Logout</button>
                     </div>
                   </div>
                 </div>
