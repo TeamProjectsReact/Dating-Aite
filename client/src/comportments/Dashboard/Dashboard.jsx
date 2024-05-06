@@ -114,8 +114,15 @@ const Dashboard = () => {
                     </div>
                   </div>
                 </div>
-            </div>
-        
+            {/*------------- content goes here  */}
+
+            {/*------------- content goes here End */}
+
+            <div className="rounded-xl w-full bg-purple-300 py-8 mr-[-20px] text-center">
+                &copy; The Dating App || Developed and Designed by JehanKandy
+            </div>   
+          </div>   
+  
     </div>
 </div>
   )
