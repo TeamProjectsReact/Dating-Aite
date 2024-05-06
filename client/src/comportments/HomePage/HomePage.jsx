@@ -75,7 +75,7 @@ const HomePage = () => {
                 (() => {
                   if(RoleUser !== null && EmailUser !== null){
                     return (
-                      <div className="">
+                      <div className="flex">
                         <Link>
                           <button className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Find Your Love</button>
                         </Link>
@@ -117,8 +117,10 @@ const HomePage = () => {
                 }
                 if(RoleUser !== null && EmailUser !== null){
                   return (
-                    <div className="bg-white my-8 mx-12">
-                      <h1 className="">Welcome Back</h1>
+                    <div className="bg-white my-8 mx-12 py-10 px-16 rounded-xl">
+                      <h1 className="text-pink-500 love-title text-3xl">Welcome Back</h1>
+                      <p className="love-title text-xl">{EmailUser}</p>
+                      <button onClick={logout} className='my-8 bg-pink-600 text-white py-2 px-8 rounded duration-500 hover:ml-2'>Logout</button>
                     </div>
                   )
                 }
