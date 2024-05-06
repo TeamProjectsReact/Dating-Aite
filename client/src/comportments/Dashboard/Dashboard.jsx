@@ -106,14 +106,8 @@ const Dashboard = () => {
 
         </div>
         <div className="w-full mr-2">
-                {/* nav bar start */}
-                <div className="py-4 rounded-2xl bg-white my-1 px-4 w-full mr-2 shadow-xl">
-                    
-                    <div className="flex justify-between">
-                        <p className="">LMS</p>
-                    </div>                      
-                </div>
-            </div>
+            
+        </div>
         
     </div>
 </div>
