@@ -42,23 +42,24 @@ const Dashboard = () => {
   return (
     <div className="bg-purple-200 py-2 h-auto w-full">
     <div className="flex">
-        <div className={`text-white duration-500 relative border-r-2 border-blue-300 shadow-md my-1 mx-2 rounded-2xl bg-purple-300 h-auto pl-4 py-4 ${sideOpen ? "w-96" : "w-20" }`}>
+        <div className={`text-white duration-500 relative border-r-4 border-white-300 shadow-md my-1 mx-2 rounded-2xl bg-purple-300 h-auto pl-4 py-4 ${sideOpen ? "w-96" : "w-20" }`}>
             <div className="flex">
                 <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
             </div>
             <div className="">
                 {sideOpen ? <div>
-                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-6"/>
+
+                    <img src="https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?t=st=1714988150~exp=1714991750~hmac=e1d2db921ee318bd0e8ffd7b7bd6a5021809718f5199a0e4044919a05cba8821&w=740" className="px-8 rounded-full"/>
                 </div> : <div></div>}
             </div>
-            <div className={`pl-2 text-xl text-gray-400 duration-500 hover:text-white cursor-pointer`}>
-                    {sideOpen ? <div className="flex pl-2 pt-2">
+            <div className={`pl-2 text-xl text-white duration-500 hover:text-purple-700 cursor-pointer `}>
+                    {sideOpen ? <div className="pt-2">
                         {
                             (() => {
                                 if(RoleUser === "SuperAdmin"){
                                     return (
-                                        <p className="" onClick={() => HeadleButtonClick(0)}>SuperAdmin</p>
+                                        <p className="text-center" onClick={() => HeadleButtonClick(0)}>SuperAdmin</p>
                                     )                            
                                 }
                                 else if(RoleUser === "user"){
@@ -71,14 +72,14 @@ const Dashboard = () => {
                         
                     </div> : <Icons name="speedometer" onClick={() => HeadleButtonClick(0)}></Icons> }
             </div>
-            <hr className="mt-2 mr-4 border-b-1 border-blue-300"/>
+            <hr className="mt-2 mr-4 border-b-1 border-white"/>
             <div className="">
                 {
                     allUserSide.map((sidem) => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-white ">                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-white duration-500 hover:text-white ">                        
                                         <p>{sidem.icon}</p>
                                         <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
