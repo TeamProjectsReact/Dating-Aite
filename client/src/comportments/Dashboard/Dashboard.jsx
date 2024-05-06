@@ -19,7 +19,7 @@ const Dashboard = () => {
       SetButtonValue(clickValue)   
   }
   const allUserSide = [
-      {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: "Books"},
+      {id: 1, name: "Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Books"},
       {id: 2, name: "Journals", link: "#", icon: <Icons name="document-text" size="large"></Icons>, btnValue: "Journals"},
       {id: 3, name: "Magazine ", link: "#", icon: <Icons name="newspaper" size="large"></Icons>, btnValue: "Magazine"},
       {id: 4, name: "Articles", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
@@ -29,7 +29,10 @@ const Dashboard = () => {
       {id: 8, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"}, 
       {id: 9, name: "All Books", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "AllBooks"},               
   ]
-
+  const navBar = [
+    {name: "Notifications", link: "#", desc: "notifications", icon: <Icons name="notifications"></Icons>},
+    {name: "Logout", desc: "logout", icon: <Icons name="power"></Icons>},        
+]
 
   const headlelogout = () => {
       localStorage.clear()
@@ -37,53 +40,47 @@ const Dashboard = () => {
       window.location.reload()
   }
   return (
-    <div className="bg-purple-200 py-2 h-auto w-full">
+    <div className="bg-gray-200 py-2 h-auto w-full">
     <div className="flex">
-        <div className={`text-white duration-500 relative border-r-4 border-white-300 shadow-md my-1 mx-2 rounded-2xl bg-purple-400 h-auto pl-4 py-4 ${sideOpen ? "w-20" : "w-96" }`}>
+        <div className={`duration-500 relative border-r-2 border-blue-300 shadow-md my-1 mx-2 rounded-2xl bg-white h-auto pl-4 py-4 ${sideOpen ? "w-64" : "w-20" }`}>
             <div className="flex">
-                <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{!sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
+                <div className="text-[#3B71CA] pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
             </div>
             <div className="">
-                {!sideOpen ? <div className="mx-8 px-8">
-
-                    <img src="https://img.freepik.com/free-photo/portrait-smiling-charming-young-man-grey-t-shirt-standing-against-plain-background_23-2148213406.jpg?t=st=1714988150~exp=1714991750~hmac=e1d2db921ee318bd0e8ffd7b7bd6a5021809718f5199a0e4044919a05cba8821&w=740" className="h-40 w-auto rounded-full"/>
+                {sideOpen ? <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-6"/>
                 </div> : <div></div>}
             </div>
-            <div className={`pl-2 text-xl text-white duration-500 hover:text-purple-700 cursor-pointer `}>
-            <p className="ml-[-20px] text-center mt-8" >
-            {!sideOpen ? <div className="px-8">
-                    {EmailUser}
-                </div> : <div></div>}
-            </p>
-                    {!sideOpen ? <div className="pl-2 pt-2">
+            <div className={`pl-2 text-xl text-gray-400 duration-500 hover:text-[#3B71CA] cursor-pointer`}>
+                    {sideOpen ? <div className="flex pl-2 pt-2">
                         {
                             (() => {
                                 if(RoleUser === "SuperAdmin"){
                                     return (
-                                        <p className="ml-[-20px] text-center text-sm mb-8" >SuperAdmin</p>
+                                        <p className="" onClick={() => HeadleButtonClick(0)}>SuperAdmin</p>
                                     )                            
                                 }
                                 else if(RoleUser === "user"){
                                     return (                                               
-                                        <p className="ml-[-20px] text-center text-sm mb-8">UserDashboard</p>
+                                        <p className="" onClick={() => HeadleButtonClick(0)}>UserDashboard</p>
                                     )    
                                 }
                             })()
                         }
                         
-                    </div> : <div className=""></div> }
+                    </div> : <Icons name="speedometer" onClick={() => HeadleButtonClick(0)}></Icons> }
             </div>
-            <hr className="mt-2 mr-4 border-b-1 border-white"/>
+            <hr className="mt-2 mr-4 border-b-1 border-blue-300"/>
             <div className="">
                 {
                     allUserSide.map((sidem) => {
                        if(RoleUser === "SuperAdmin"){
                             return (
                                 <Link to={sidem.link}>
-                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-white duration-500 hover:ml-2 ">                        
+                                    <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA] ">                        
                                         <p>{sidem.icon}</p>
-                                        <p className={`whitespace-nowrap pt-2 pl-2 ${sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
+                                        <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                     </div>
                                 </Link>
                             )
@@ -92,7 +89,7 @@ const Dashboard = () => {
                             if(sidem.id === 8 ){
                                 return (
                                     <Link to={sidem.link}>
-                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-white duration-500 hover:text-purple-500">                        
+                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className="flex py-2 text-gray-400 duration-500 hover:text-[#3B71CA]">                        
                                             <p>{sidem.icon}</p>
                                             <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                         </div>
@@ -105,19 +102,29 @@ const Dashboard = () => {
             </div>
 
         </div>
-        <div className="w-full mx-8 mt-4">
-            <div className="lg:flex justify-between">
-              <div className="w-full">
-                <form>
-                  <input type="text" name="" id="" className=" placeholder-white h-14 lg:w-1/6 w-full rounded bg-purple-300 text-white pl-2" placeholder="Search"/>
-                  <button type="submit" className="mx-2 bg-purple-500 h-14 px-8 rounded text-white">Search</button>
-                </form>
-              </div>
-              <div className="">
-                Love
-              </div>
+        <div className="w-full mr-2">
+                {/* nav bar start */}
+                <div className="py-4 rounded-2xl bg-white my-1 px-4 w-full mr-2 shadow-xl">
+                    
+                    <div className="flex justify-between">
+                        <p className="">LMS</p>
+                        <div className="flex ">
+                            {
+                                navBar.map((nav) => {
+                                    if(nav.desc === "logout"){
+                                        return (
+                                            <div onClick={headlelogout} className="px-2 text-red-500 flex cursor-pointer">
+                                                <p>{nav.name}</p>
+                                                <p className="pl-2 pt-[2px]">{nav.icon}</p>                                               
+                                            </div>
+                                        )
+                                    }
+                                })
+                            }
+                        </div>
+                    </div>                      
+                </div>
             </div>
-        </div>
         
     </div>
 </div>
