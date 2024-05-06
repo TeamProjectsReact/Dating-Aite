@@ -20,10 +20,13 @@ const Dashboard = () => {
   }
   const allUserSide = [
       {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
-      {id: 2, name: "Journals", link: "#", icon: <Icons name="document-text" size="large"></Icons>, btnValue: "Journals"},
-      {id: 3, name: "Magazine ", link: "#", icon: <Icons name="newspaper" size="large"></Icons>, btnValue: "Magazine"},
-      {id: 4, name: "Articles", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
-      {id: 5, name: "Thesis", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
+      {id: 2, name: "Notifications", link: "#", icon: <Icons name="document-text" size="large"></Icons>, btnValue: "Journals"},
+      {id: 5, name: "Users", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
+      {id: 5, name: "Partners", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
+      {id: 5, name: "Posts", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
+      {id: 3, name: "My Datings", link: "#", icon: <Icons name="newspaper" size="large"></Icons>, btnValue: "Magazine"},
+      {id: 4, name: "My Story", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
+      {id: 5, name: "My Posts", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Thesis"},
       
   ]
 
