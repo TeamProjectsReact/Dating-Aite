@@ -11,6 +11,7 @@ const Mens = () => {
 
   return (
     <div className=''>
+        <h1 className="text-5xl love-title text-pink-500 my-4 text-center">Boys</h1>
         <div className="lg:grid grid-cols-3 gap-4">
             {
                 girls.map((girl) => {
