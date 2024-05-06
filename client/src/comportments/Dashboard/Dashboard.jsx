@@ -23,15 +23,15 @@ const Dashboard = () => {
       {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
       {id: 2, name: "Notifications", link: "#", icon: <Icons name="notifications" size="large"></Icons>, btnValue: "Notifications"},
       {id: 3, name: "Users", link: "#", icon: <Icons name="people-circle" size="large"></Icons>, btnValue: "Users"},
-      {id: 3, name: "Users", link: "#", icon: <Icons name="people-circle" size="large"></Icons>, btnValue: "Users"},
-      {id: 3, name: "Users", link: "#", icon: <Icons name="people-circle" size="large"></Icons>, btnValue: "Users"},            
-      {id: 4, name: "My Network", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "MyNetwork"},
-      {id: 5, name: "Partners", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "Partners"},
-      {id: 6, name: "Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "Posts"},
-      {id: 7, name: "My Datings", link: "#", icon: <Icons name="business" size="large"></Icons>, btnValue: "MyDatings"},
-      {id: 8, name: "My Story", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "MyStory"},
-      {id: 9, name: "My Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "MyPosts"},
-      {id: 10, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"},
+      {id: 4, name: "Reports", link: "#", icon: <Icons name="help-circle" size="large"></Icons>, btnValue: "Users"},
+      {id: 5, name: "My Reports", link: "#", icon: <Icons name="help-circle" size="large"></Icons>, btnValue: "Users"},            
+      {id: 6, name: "My Network", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "MyNetwork"},
+      {id: 7, name: "Partners", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "Partners"},
+      {id: 8, name: "Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "Posts"},
+      {id: 9, name: "My Datings", link: "#", icon: <Icons name="business" size="large"></Icons>, btnValue: "MyDatings"},
+      {id: 10, name: "My Story", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "MyStory"},
+      {id: 11, name: "My Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "MyPosts"},
+      {id: 12, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"},
       
   ]
 
@@ -54,7 +54,9 @@ const Dashboard = () => {
             </div>
             <div className="">
                 {sideOpen ? <div>
-                    <h1 className="text-center my-4 font-semibold text-2xl love-title">Dating App</h1>
+                    <Link to={'/'}>
+                      <h1 className="text-center my-4 font-semibold text-2xl love-title">Dating App</h1>
+                    </Link>
                     <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className="px-8 ml-4"/>
                     <p className="text-center mt-4">{EmailUser}</p>
                 </div> : <div></div>}
@@ -94,7 +96,7 @@ const Dashboard = () => {
                             )
                         }
                         if(RoleUser === "user"){
-                            if(sidem.id !== 3 ){
+                            if(sidem.id !== 3 && sidem.id !== 4){
                                 return (
                                     <Link to={sidem.link}>
                                         <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-purple-700  ${sideOpen ? "px-6" : "px-1" }`}>                        
@@ -114,9 +116,11 @@ const Dashboard = () => {
                 {/* nav bar start */}
                 <div className="py-8 rounded-2xl my-1 px-4 w-full mr-2 ">
                   <div className="flex justify-between">
-                    <div className="text-2xl text-purple-500 love-title lg:visible invisible">
-                      Dating App
-                    </div>
+                    <Link to={'/'}>
+                      <div className="text-2xl text-purple-500 love-title lg:visible invisible">
+                        Dating App
+                      </div>
+                    </Link>
                     <div className="mr-8">
                       <button onClick={headlelogout} className="bg-purple-600 py-4 px-8 rounded text-white duration-500 hover:mr-2">Logout</button>
                     </div>
