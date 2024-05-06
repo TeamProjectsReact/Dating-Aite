@@ -23,7 +23,7 @@ const HomePage = () => {
     //curent login user
     const RoleUser = secureLocalStorage.getItem("Login1");
     const EmailUser = secureLocalStorage.getItem("login2");
-    
+
     const [buttonValue, SetButtonValue] = useState(0)
     const HeadleButtonClick = (clickValue) => {
         SetButtonValue(clickValue)   
@@ -63,10 +63,22 @@ const HomePage = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam laborum libero ab ratione totam, inventore sit, iure, ullam tempore magni eaque animi a delectus minima saepe ipsam qui possimus fugit.
                 Esse reiciendis aperiam, vitae optio corporis totam eos explicabo facilis, assumenda tempora minima. Alias id laborum ducimus odit dolores rerum quo in debitis pariatur. Delectus labore dolore corrupti hic pariatur!
               </p>
-              <div className="flex">
-                <button onClick={() => HeadleButtonClick("SignUp")} className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Be a Member</button>
-                <button onClick={() => HeadleButtonClick("SignIn")} className='mx-2 bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Sign In</button>
-              </div>
+              {
+                (() => {
+                  if(RoleUser !== null && EmailUser !== null){
+
+                  }
+                  else{
+                    return (
+                      <div className="flex">
+                        <button onClick={() => HeadleButtonClick("SignUp")} className='mx-2 bg-pink-500 my-4 py-4 px-8 text-white rounded-full font-semibold duration-500 hover:bg-white hover:text-pink-500'>Be a Member</button>
+                        <button onClick={() => HeadleButtonClick("SignIn")} className='mx-2 bg-white my-4 py-4 px-8 text-pink-500 rounded-full font-semibold duration-500 hover:bg-pink-500 hover:text-white'>Sign In</button>
+                      </div>
+                    )
+                  }
+                })()
+              }
+
             </div>
           </div>
           <div className="">
