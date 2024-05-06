@@ -10,8 +10,20 @@ const Girls = () => {
     ]
 
   return (
-    <div className='bg-pink-100 py-8 px-12 rounded shadow-md'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione iure fuga dolores corrupti ea eveniet eum excepturi? Aliquid ipsam illo nisi vero ad asperiores quia tempora odio.
+    <div className=''>
+        <div className="lg:grid grid-cols-3 gap-4">
+            {
+                girls.map((girl) => {
+                    return (
+                        <div className="bg-pink-200 rounded-md shadow-md py-8 px-12">
+                            <h1 className="">Name: {girl.name}</h1>
+                            <p className="">Bio: {girl.desc}</p>
+                            
+                        </div>
+                    )
+                })
+            }
+        </div>
     </div>
   )
 }
