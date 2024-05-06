@@ -6,7 +6,7 @@ const SignIn = () => {
         <div className="my-2">
             <form>
                 <label htmlFor="">Username : </label>
-                <input type="text" name="" id="" className="w-full h-12 border border-pink-500" />
+                <input type="text" name="" id="" className="w-full h-12 border border-pink-500 rounded bg-transparent" />
             </form>
         </div>
     </div>
