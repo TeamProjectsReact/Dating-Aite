@@ -14,7 +14,16 @@ const SignUp = () => {
 
      const headleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8081/SignUp', SignInData)
+        axios.post('http://localhost:8081/SignUp', SignUpData)
+        .then(res => {
+            if(res.data.Status === "Success"){
+                alert("Registation Successful")
+                window.location.reload()
+            }
+            else{
+                alert(res.data.Error)
+            }
+        })
      }
 
   return (
