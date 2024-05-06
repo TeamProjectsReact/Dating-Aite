@@ -149,12 +149,16 @@ const HomePage = () => {
                   (() => {
                     if(buttonValue === "Women"){
                       return (
-                        <Girls />
+                        <Fade>
+                          <Girls />
+                        </Fade>
                       )
                     }
                     if(buttonValue === "Mens"){
                       return (
-                        <Mens />
+                        <Fade>
+                          <Mens />
+                        </Fade>
                       )
                     }
                     if(buttonValue === "LStories"){
