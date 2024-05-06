@@ -105,8 +105,17 @@ const Dashboard = () => {
             </div>
 
         </div>
-        <div className="w-full mr-2">
-            
+        <div className="w-full mx-8 mt-4">
+            <div className="lg:flex justify-between">
+              <div className="w-full">
+                <form>
+                  <input type="text" name="" id="" className="h-14 w-1/6 rounded bg-purple-300 text-white pl-2" placeholder="Search"/>
+                </form>
+              </div>
+              <div className="">
+                Love
+              </div>
+            </div>
         </div>
         
     </div>
