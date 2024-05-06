@@ -107,7 +107,27 @@ app.post('/SignUp', (req, res) => {
 // SignIn endpoint
 
 app.post('/SignIn', (req, res) => {
-  
+  const userSql = "SELECT * FROM users WHERE Email = ?"
+  connection.query(userSql, [req.body.email], (err, result) => {
+    if(err) throw err
+
+    if(result.length === 0){
+      return res.json({Error: "User Not Found"})
+    }
+    else{
+      const password = req.body.password;
+      bcrypt.compare(password, result[0].Password, (err, PassMatch) => {
+        if(err) throw err
+
+        if(PassMatch) {
+
+        }
+        else{
+          return res.json({Error: "Password not Match"})
+        }
+      })
+    }
+  })
 })
 
 
