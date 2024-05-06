@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import LoveImage from '../../assets/lvoe.png'
 import MyIcon from '@reacticons/ionicons';
+import Girls from '../HomeData/Girls';
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -121,7 +122,15 @@ const HomePage = () => {
                 }
               </div>
               <div className="">
-                {buttonValue}
+                {
+                  (() => {
+                    if(buttonValue === "Women"){
+                      return (
+                        <Girls />
+                      )
+                    }
+                  })()
+                }
               </div>
           </div>
         </Fade>
