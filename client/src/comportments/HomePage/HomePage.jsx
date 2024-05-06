@@ -163,12 +163,16 @@ const HomePage = () => {
                     }
                     if(buttonValue === "LStories"){
                       return (
-                        <LoveStories />
+                        <Fade>
+                          <LoveStories />
+                        </Fade>
                       )
                     }
                     if(buttonValue === "Posts"){
                       return (
-                        <Posts />
+                        <Fade>
+                          <Posts />
+                        </Fade>
                       )
                     }
                   })()
