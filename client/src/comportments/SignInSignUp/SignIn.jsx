@@ -11,9 +11,56 @@ const SignIn = () => {
         password: ''
     })
 
-    const headleSubmit = (e) => {
+    const headleSubmit = async (e) => {
         e.preventDefault()
-        axios.post('http://localhost:8081/SignIn', SignINData)
+        try{
+            const res = await axios.post('http://localhost:8081/SignIn', LoginData)
+            
+            const loginToken = res.data.Token;
+
+            //store token in localstorage
+            localStorage.setItem('LoginToken', loginToken)
+            
+            // //get and store login user role and email
+            // const userRole = res.data.LoginUser[0].role;
+            // const userEmail = res.data.LoginUser[0].email;
+
+            // //store data in localstore so that use secureLocalStorage
+            // secureLocalStorage.setItem("Login1", userRole);
+            // secureLocalStorage.setItem("login2", userEmail);
+
+            //login to system
+
+            if(res.data.Msg === "Success"){
+                if(res.data.LoginUser[0].is_active === 0 && res.data.LoginUser[0].is_lock === 1){
+                    alert('Your Account has been locked. Unauthorized activity has been detected.')
+                    localStorage.clear()
+                    navigate('/')
+                }
+                else if(res.data.LoginUser[0].is_active === 0){
+                    alert('Your Account has been Deactive by Administration.')
+                    localStorage.clear()
+                    navigate('/')
+                }
+                else{
+                    //get and store login user role and email
+                    const userRole = res.data.LoginUser[0].Role;
+                    const userEmail = res.data.LoginUser[0].Email;
+
+                    //store data in localstore so that use secureLocalStorage
+                    secureLocalStorage.setItem("Login1", userRole);
+                    secureLocalStorage.setItem("login2", userEmail);
+                    navigate('/Dashboard');
+                }
+            }
+            else{
+                alert(res.data.Error)
+            }
+
+        }        
+        catch(err){
+            console.log(err)
+        }
     }
 
   return (
