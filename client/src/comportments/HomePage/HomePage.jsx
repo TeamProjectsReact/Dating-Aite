@@ -6,6 +6,7 @@ import LoveImage from '../../assets/lvoe.png'
 import MyIcon from '@reacticons/ionicons';
 import Girls from '../HomeData/Girls';
 import Mens from '../HomeData/Mens';
+import LoveStories from '../HomeData/LoveStories';
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -133,6 +134,11 @@ const HomePage = () => {
                     if(buttonValue === "Mens"){
                       return (
                         <Mens />
+                      )
+                    }
+                    if(buttonValue === "LStories"){
+                      return (
+                        <LoveStories />
                       )
                     }
                   })()
