@@ -2,6 +2,7 @@ import Icons from "@reacticons/ionicons"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import  secureLocalStorage  from  "react-secure-storage"
+import DashData from "./DashData"
 
 const Dashboard = () => {
   const navigate = useNavigate() 
@@ -20,14 +21,14 @@ const Dashboard = () => {
   }
   const allUserSide = [
       {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
-      {id: 2, name: "Notifications", link: "#", icon: <Icons name="notifications" size="large"></Icons>, btnValue: "Journals"},
-      {id: 3, name: "Users", link: "#", icon: <Icons name="people-circle" size="large"></Icons>, btnValue: "Thesis"},
-      {id: 4, name: "Partners", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "Thesis"},
-      {id: 5, name: "Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "Thesis"},
-      {id: 6, name: "My Datings", link: "#", icon: <Icons name="business" size="large"></Icons>, btnValue: "Magazine"},
-      {id: 7, name: "My Story", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "Articles"},
-      {id: 8, name: "My Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "Thesis"},
-      {id: 9, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Thesis"},
+      {id: 2, name: "Notifications", link: "#", icon: <Icons name="notifications" size="large"></Icons>, btnValue: "Notifications"},
+      {id: 3, name: "Users", link: "#", icon: <Icons name="people-circle" size="large"></Icons>, btnValue: "Users"},
+      {id: 4, name: "Partners", link: "#", icon: <Icons name="people" size="large"></Icons>, btnValue: "Partners"},
+      {id: 5, name: "Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "Posts"},
+      {id: 6, name: "My Datings", link: "#", icon: <Icons name="business" size="large"></Icons>, btnValue: "MyDatings"},
+      {id: 7, name: "My Story", link: "#", icon: <Icons name="book" size="large"></Icons>, btnValue: "MyStory"},
+      {id: 8, name: "My Posts", link: "#", icon: <Icons name="document" size="large"></Icons>, btnValue: "MyPosts"},
+      {id: 9, name: "Profile", link: "#", icon: <Icons name="person" size="large"></Icons>, btnValue: "Profile"},
       
   ]
 
@@ -110,7 +111,7 @@ const Dashboard = () => {
                 {/* nav bar start */}
                 <div className="py-8 rounded-2xl my-1 px-4 w-full mr-2 ">
                   <div className="flex justify-between">
-                    <div className="text-2xl text-purple-500 love-title">
+                    <div className="text-2xl text-purple-500 love-title lg:visible invisible">
                       Dating App
                     </div>
                     <div className="mr-8">
@@ -120,7 +121,15 @@ const Dashboard = () => {
                 </div>
             {/*------------- content goes here  */}
 
-                
+                {
+                  (() => {
+                    if(buttonValue === 0){
+                      return (
+                        <DashData />
+                      )
+                    }
+                  })()
+                }
 
             {/*------------- content goes here End */}
 
