@@ -3,10 +3,10 @@ import React from 'react'
 const Girls = () => {
     const girls = [
         {name: "Nimali", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
-        {name: "Nimali", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
-        {name: "Nimali", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
-        {name: "Nimali", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
-        {name: "Nimali", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
+        {name: "Kamala", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
+        {name: "Perera", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
+        {name: "Amara", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
+        {name: "Sara", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, facere? Veniam ratione", img: "", age: "24"},
     ]
 
   return (
