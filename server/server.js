@@ -70,8 +70,10 @@ app.post('/SignUp', (req, res) => {
         if(err) throw err
 
         if(HashPass){
-          const sql = "INSERT INTO users() VALUES (?)"
+          const sql = "INSERT INTO users(Username, Email, Password, Role, join_at, is_active, is_lock) VALUES (?)"
           const userRole = "user"
+          const is_active = 1
+          const is_lock = 0
           const join_at = new Date()
           
           const values = [
@@ -79,7 +81,9 @@ app.post('/SignUp', (req, res) => {
             req.body.email,
             HashPass,
             userRole,
-            join_at
+            join_at,
+            is_active,
+            is_lock
           ]
         }
       })
