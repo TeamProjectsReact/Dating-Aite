@@ -50,7 +50,7 @@ const Dashboard = () => {
   return (
     <div className="bg-[#f4ebfe] h-auto w-full">
     <div className="flex">
-        <div style={styles} className={`my-4 mx-4 rounded-xl pl-[-40px]duration-500 relative border-r-2 border-blue-200 bg-purple-300 duration-500 h-auto pl-4 py-4 ${sideOpen ? "w-72" : "w-20" }`}>
+        <div style={styles} className={`my-4 mx-4 rounded-xl pl-[-40px]duration-500 relative border-r-2 border-blue-200 bg-purple-300 duration-500 h-auto pl-4 py-4 h-auto ${sideOpen ? "w-72" : "w-20" }`}>
             <div className="flex">
                 <div className="text-white pt-1" onClick={() => SetsideOpen(!sideOpen)}>{sideOpen ? <Icons size="large" name="close"></Icons> : <Icons size="large" name="menu"></Icons>}</div>
                 {/* <div className={`text-2xl pb-4 text-[#3B71CA] font-bold ${!sideOpen && 'scale-0'}`}>SuperAdmin</div>                     */}
@@ -143,7 +143,7 @@ const Dashboard = () => {
 
             {/*------------- content goes here End */}
 
-            <div className="rounded-xl w-full bg-purple-300 py-8 mr-[-20px] text-center">
+            <div className="rounded-xl w-full bg-purple-300 py-8 mr-[-20px] text-center my-8">
                 &copy; The Dating App || Developed and Designed by JehanKandy
             </div>   
           </div>   
