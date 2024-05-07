@@ -19,9 +19,15 @@ const MyData = () => {
         SetButtonValue(clickValue)   
     }
 
+    const headleBack = () => {
+        window.location.reload()
+    }
+
     if(RoleUser !== null && EmailUser !== null){
         return (
-            <div>MyData</div>
+            <div>
+                <button onClick={headleBack} className="bg-pink-500 text-white py-4 px-8 rounded duration-500 hover:ml-2">Back to Dashboard</button>
+            </div>
         )
     }
     else{
