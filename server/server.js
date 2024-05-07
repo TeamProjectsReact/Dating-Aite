@@ -141,6 +141,8 @@ app.post('/SignIn', (req, res) => {
 // isDataUpdated - check the Personal Data is update or not
 
 app.get('/isDataUpdated/:id', (req, res) => {
+  const userEmail = req.params.id
+  
 
 })
 
