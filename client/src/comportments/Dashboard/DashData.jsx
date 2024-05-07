@@ -25,9 +25,9 @@ const DashData = () => {
     {name: "Posts", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {name: "Womens", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {name: "Mens", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},    
+    {name: "Stories", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Fake Accounts", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Reported Accounts", icon: "", value: <CountUp end={20} />, btnValue: ""},    
   ]
 
     if(RoleUser !== null && EmailUser !== null){
