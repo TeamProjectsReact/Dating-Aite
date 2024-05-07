@@ -47,6 +47,21 @@ const DashData = () => {
             {/* {isUpdateData.Data} */}
 
           </div>
+          {
+            (() => {
+              if(RoleUser === "SuperAdmin"){
+                return (
+                  <h1 className="text-pink-500 text-xl font-semibold mx-4">SuperAdmin Dashboard</h1>
+                )
+              }
+              else if(RoleUser === "user"){
+                return (
+                  <h1 className="text-pink-500 text-xl font-semibold mx-4">User Dashboard</h1>
+                )
+              }
+            })()
+          }
+
           <div className="lg:grid grid-cols-4 gap-4 my-8 mx-4">
               {
                 allDataCout.map((dashData) => {
