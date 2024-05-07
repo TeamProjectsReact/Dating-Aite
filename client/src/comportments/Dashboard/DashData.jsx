@@ -18,9 +18,16 @@ const DashData = () => {
   const HeadleButtonClick = (clickValue) => {
       SetButtonValue(clickValue)   
   }
-  return (
-    <div>DashData</div>
-  )
+
+    if(RoleUser !== null && EmailUser !== null){
+      return (
+        <div>DashData</div>
+      )
+    }
+    else{
+      
+    }
+
 }
 
 export default DashData
