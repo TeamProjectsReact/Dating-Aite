@@ -142,8 +142,9 @@ app.post('/SignIn', (req, res) => {
 
 app.get('/isDataUpdated/:id', (req, res) => {
   const userEmail = req.params.id
-  
 
+  const sql = "SELECT * FROM my_data WHERE Email = ?"
+  
 })
 
 // all end points end
