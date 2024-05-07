@@ -22,12 +22,12 @@ const DashData = () => {
 
   const allDataCout = [
     {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: ""},
-    {id: 2, name: "Posts", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {id: 3, name: "Womens", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {id: 4, name: "Mens", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {id: 5, name: "Stories", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {id: 6, name: "Fake Accounts", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {id: 7, name: "Reported Accounts", icon: "", value: <CountUp end={20} />, btnValue: ""},    
+    {id: 2, name: "Posts", icon: "document", value: <CountUp end={20} />, btnValue: ""},
+    {id: 3, name: "Womens", icon: "female", value: <CountUp end={20} />, btnValue: ""},
+    {id: 4, name: "Mens", icon: "male", value: <CountUp end={20} />, btnValue: ""},
+    {id: 5, name: "Stories", icon: "book", value: <CountUp end={20} />, btnValue: ""},
+    {id: 6, name: "Fake Accounts", icon: "person", value: <CountUp end={20} />, btnValue: ""},
+    {id: 7, name: "Reported Accounts", icon: "help-circle", value: <CountUp end={20} />, btnValue: ""},    
   ]
 
     if(RoleUser !== null && EmailUser !== null){
