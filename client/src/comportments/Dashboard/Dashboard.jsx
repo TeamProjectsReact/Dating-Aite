@@ -20,6 +20,10 @@ const Dashboard = () => {
   const [buttonValue, SetButtonValue] = useState(0)
   const HeadleButtonClick = (clickValue) => {
       SetButtonValue(clickValue)   
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
   }
 
 
