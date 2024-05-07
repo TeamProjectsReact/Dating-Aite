@@ -33,8 +33,8 @@ const DashData = () => {
   const allDataCout = [
     {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: "reports"},
     {id: 2, name: "Posts", icon: "document", value: <CountUp end={20} />, btnValue: "posts"},
-    {id: 3, name: "Womens", icon: "female", value: <CountUp end={20} />, btnValue: "Womens"},
-    {id: 4, name: "Mens", icon: "male", value: <CountUp end={20} />, btnValue: "Mens"},
+    {id: 3, name: "Women", icon: "female", value: <CountUp end={20} />, btnValue: "Womens"},
+    {id: 4, name: "Men", icon: "male", value: <CountUp end={20} />, btnValue: "Mens"},
     {id: 5, name: "Stories", icon: "book", value: <CountUp end={20} />, btnValue: "Stories"},
     {id: 6, name: "Fake Accounts", icon: "person", value: <CountUp end={20} />, btnValue: "FakeAccounts"},
     {id: 7, name: "Reported Accounts", icon: "help-circle", value: <CountUp end={20} />, btnValue: "ReportedAccounts"},    
@@ -67,7 +67,7 @@ const DashData = () => {
                 allDataCout.map((dashData) => {
                   if(RoleUser === "SuperAdmin"){
                     return (
-                      <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
+                      <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 lg:px-8 px-0 cursor-pointer duration-500 hover:bg-pink-500">
                         <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
                         <h1 className="text-md">{dashData.name}</h1>
                         <h1 className="text-xl">{dashData.value}</h1>
