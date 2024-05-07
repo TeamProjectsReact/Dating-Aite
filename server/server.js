@@ -144,7 +144,15 @@ app.get('/isDataUpdated/:id', (req, res) => {
   const userEmail = req.params.id
 
   const sql = "SELECT * FROM my_data WHERE Email = ?"
-  
+  connection.query(sql, [userEmail], (err, result) => {
+    if(err) {
+      return res.json({Error: "Internal Server Error"})
+    }
+    else{
+      return res.json(result[0])
+    }
+  })
+
 })
 
 // all end points end
