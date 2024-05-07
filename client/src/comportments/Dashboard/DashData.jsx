@@ -43,20 +43,6 @@ const DashData = () => {
     if(RoleUser !== null && EmailUser !== null){
       return (
         <div>
-          {
-            (() => {
-              if(isUpdateData !== null){
-                return (
-                  <div className="">user in database</div>
-                )
-              }
-              else{
-                return (
-                  <div className="">no user</div>
-                )
-              }
-            })()
-          }
           <div className="">
 
           </div>
