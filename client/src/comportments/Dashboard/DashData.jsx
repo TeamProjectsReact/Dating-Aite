@@ -25,7 +25,10 @@ const DashData = () => {
       )
     }
     else{
-      
+      useEffect(() => {
+          localStorage.clear()
+          navigate('/')
+      }, [])
     }
 
 }
