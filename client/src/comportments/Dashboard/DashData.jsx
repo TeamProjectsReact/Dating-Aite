@@ -21,7 +21,7 @@ const DashData = () => {
   }
 
   const allDataCout = [
-    {id: 1, name: "Reports", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: ""},
     {id: 2, name: "Posts", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {id: 3, name: "Womens", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {id: 4, name: "Mens", icon: "", value: <CountUp end={20} />, btnValue: ""},
@@ -37,8 +37,9 @@ const DashData = () => {
               {
                 allDataCout.map((dashData) => {
                   return (
-                    <div className="bg-purple-400 text-white rounded-xl text-center py-8 px-16">
-                      Hi all
+                    <div className="bg-pink-400 text-white rounded-xl text-center py-8 px-16 cursor-pointer duration-500 hover:bg-pink-500">
+                      <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
+                      <h1 className="">{dashData.name}</h1>
                     </div>
                   )
                 })
