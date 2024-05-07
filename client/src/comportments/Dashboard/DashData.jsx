@@ -21,13 +21,13 @@ const DashData = () => {
   }
 
   const allDataCout = [
-    {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: ""},
-    {id: 2, name: "Posts", icon: "document", value: <CountUp end={20} />, btnValue: ""},
-    {id: 3, name: "Womens", icon: "female", value: <CountUp end={20} />, btnValue: ""},
-    {id: 4, name: "Mens", icon: "male", value: <CountUp end={20} />, btnValue: ""},
-    {id: 5, name: "Stories", icon: "book", value: <CountUp end={20} />, btnValue: ""},
-    {id: 6, name: "Fake Accounts", icon: "person", value: <CountUp end={20} />, btnValue: ""},
-    {id: 7, name: "Reported Accounts", icon: "help-circle", value: <CountUp end={20} />, btnValue: ""},    
+    {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: "reports"},
+    {id: 2, name: "Posts", icon: "document", value: <CountUp end={20} />, btnValue: "posts"},
+    {id: 3, name: "Womens", icon: "female", value: <CountUp end={20} />, btnValue: "Womens"},
+    {id: 4, name: "Mens", icon: "male", value: <CountUp end={20} />, btnValue: "Mens"},
+    {id: 5, name: "Stories", icon: "book", value: <CountUp end={20} />, btnValue: "Stories"},
+    {id: 6, name: "Fake Accounts", icon: "person", value: <CountUp end={20} />, btnValue: "FakeAccounts"},
+    {id: 7, name: "Reported Accounts", icon: "help-circle", value: <CountUp end={20} />, btnValue: "ReportedAccounts"},    
   ]
 
     if(RoleUser !== null && EmailUser !== null){
@@ -37,7 +37,7 @@ const DashData = () => {
               {
                 allDataCout.map((dashData) => {
                   return (
-                    <div className="bg-pink-400 text-white rounded-xl text-center py-8 px-16 cursor-pointer duration-500 hover:bg-pink-500">
+                    <div className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
                       <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
                       <h1 className="text-md">{dashData.name}</h1>
                       <h1 className="text-xl">{dashData.value}</h1>
