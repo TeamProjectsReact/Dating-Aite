@@ -44,7 +44,8 @@ const DashData = () => {
       return (
         <div>
           <div className="">
-            {isUpdateData.Data}
+            {/* {isUpdateData.Data} */}
+
           </div>
           <div className="lg:grid grid-cols-4 gap-4 my-8 mx-4">
               {
