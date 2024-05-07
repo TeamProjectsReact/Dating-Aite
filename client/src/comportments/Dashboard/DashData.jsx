@@ -2,6 +2,7 @@ import Icons from "@reacticons/ionicons"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import  secureLocalStorage  from  "react-secure-storage"
+import CountUp from 'react-countup';
 
 const DashData = () => {
     const navigate = useNavigate() 
@@ -18,6 +19,16 @@ const DashData = () => {
   const HeadleButtonClick = (clickValue) => {
       SetButtonValue(clickValue)   
   }
+
+  const allDataCout = [
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},    
+  ]
 
     if(RoleUser !== null && EmailUser !== null){
       return (
