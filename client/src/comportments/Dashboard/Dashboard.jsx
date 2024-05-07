@@ -99,7 +99,7 @@ const Dashboard = () => {
                             if(sidem.id !== 3 && sidem.id !== 4){
                                 return (
                                     <Link to={sidem.link}>
-                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-purple-700  ${sideOpen ? "px-6" : "px-1" }`}>                        
+                                        <div onClick={() => HeadleButtonClick(sidem.btnValue)} className={`flex py-4 text-white duration-500 hover:text-purple-700 hover:ml-3   ${sideOpen ? "px-6" : "px-1" }`}>                        
                                             <p>{sidem.icon}</p>
                                             <p className={`whitespace-nowrap pt-2 pl-2 ${!sideOpen && 'scale-0'}`}>{sidem.name}</p>                        
                                         </div>
