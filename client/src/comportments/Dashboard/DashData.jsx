@@ -90,6 +90,38 @@ const DashData = () => {
               }
           </div>
           {/* {buttonValue} */}
+          <div className="">
+            {/* fetch data */}
+          </div>
+
+          <div className="my-8">
+            <h1 className="text-pink-500 text-xl font-semibold mx-4">Personal Information</h1>
+
+            <div className="mx-4 rounded-xl my-4 bg-pink-200 py-8 px-8">
+              <div className="lg:grid grid-cols-3 gap-4">
+                <div className="">
+                  <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png" className=" ml-4"/>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Username: </span> Jehankandy</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Email: </span> jehan@123.com</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">First Name: </span> Jehankandy</p>
+                </div>
+                <div className="">
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Last Name: </span> kandy</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">NIC/Passport No: </span> 123456789V</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Address: </span> 88, ABC Street, XYZ</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">location: </span> USA</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Gender: </span> Male</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Partners: </span> Female</p>
+                </div>
+                <div className="">
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Accept Pets: </span> No</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Email: </span> jehan@123.com</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">First Name: </span> Jehankandy</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       )
     }
