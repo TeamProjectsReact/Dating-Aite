@@ -36,13 +36,27 @@ const DashData = () => {
           <div className="lg:grid grid-cols-4 gap-4 my-8 mx-4">
               {
                 allDataCout.map((dashData) => {
-                  return (
-                    <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
-                      <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
-                      <h1 className="text-md">{dashData.name}</h1>
-                      <h1 className="text-xl">{dashData.value}</h1>
-                    </div>
-                  )
+                  if(RoleUser === "SuperAdmin"){
+                    return (
+                      <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
+                        <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
+                        <h1 className="text-md">{dashData.name}</h1>
+                        <h1 className="text-xl">{dashData.value}</h1>
+                      </div>
+                    )
+                  }
+                  else if(RoleUser === "user"){
+                    if(dashData.id !== 6 && dashData.id !== 7){
+                      return (
+                        <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
+                          <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
+                          <h1 className="text-md">{dashData.name}</h1>
+                          <h1 className="text-xl">{dashData.value}</h1>
+                        </div>
+                      )
+                    }
+                  }
+
                 })
               }
           </div>
