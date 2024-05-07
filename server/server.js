@@ -148,8 +148,11 @@ app.get('/isDataUpdated/:id', (req, res) => {
     if(err) {
       return res.json({Error: "Internal Server Error"})
     }
+    else if(result.length === 0){
+      return res.json({Data: "No Recodes"})
+    }
     else{
-      return res.json(result[0])
+      return res.json({Data: "have Recodes"})
     }
   })
 
