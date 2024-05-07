@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom"
 import  secureLocalStorage  from  "react-secure-storage"
 import DashData from "./DashData"
 import axios from "axios"
+import MyData from "../MyData/MyData"
 
 const Dashboard = () => {
   const navigate = useNavigate() 
@@ -134,9 +135,14 @@ const Dashboard = () => {
                 {
                   (() => {
                     if(buttonValue === 0){
-                      return (
-                        <DashData />
-                      )
+                        return (
+                            <DashData />
+                        )
+                    }
+                    if(buttonValue === "Profile"){
+                        return (
+                            <MyData />
+                        )
                     }
                   })()
                 }
