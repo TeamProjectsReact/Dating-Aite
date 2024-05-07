@@ -29,8 +29,7 @@ const MyData = () => {
         {id: 2, name: "My Datings", value: <CountUp end={20} />, icon: "perople", btnvalue: "myDatings"},
         {id: 3, name: "My Stories", value: <CountUp end={20} />, icon: "perople", btnvalue: "myStories"},
         {id: 4, name: "My Posts", value: <CountUp end={20} />, icon: "perople", btnvalue: "myPosts"},
-        {id: 5, name: "My Reporteds", value: <CountUp end={20} />, icon: "perople", btnvalue: "myReporteds"},
-        
+        {id: 5, name: "My Reporteds", value: <CountUp end={20} />, icon: "perople", btnvalue: "myReporteds"},        
     ]
 
     if(RoleUser !== null && EmailUser !== null){
