@@ -1,8 +1,9 @@
 import Icons from "@reacticons/ionicons"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import  secureLocalStorage  from  "react-secure-storage"
 import DashData from "./DashData"
+import axios from "axios"
 
 const Dashboard = () => {
   const navigate = useNavigate() 
@@ -19,6 +20,14 @@ const Dashboard = () => {
   const HeadleButtonClick = (clickValue) => {
       SetButtonValue(clickValue)   
   }
+
+  const [isUpdateData, SetisUpdateData] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8081/isDataUpdated/' + EmailUser)
+        .then(res => SetisUpdateData(res.data))
+        .catch(err => console.log(err))
+    }, [])
+    
   const allUserSide = [
       {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
       {id: 2, name: "Notifications", link: "#", icon: <Icons name="notifications" size="large"></Icons>, btnValue: "Notifications"},
