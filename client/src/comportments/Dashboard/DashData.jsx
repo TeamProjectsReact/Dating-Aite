@@ -37,7 +37,7 @@ const DashData = () => {
               {
                 allDataCout.map((dashData) => {
                   return (
-                    <div className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
+                    <div onClick={() => HeadleButtonClick(dashData.btnValue)} className="bg-pink-400 text-white rounded-xl text-center py-8 px-8 cursor-pointer duration-500 hover:bg-pink-500">
                       <h1 className="text-3xl"><Icons name={dashData.icon} size="large"></Icons></h1>
                       <h1 className="text-md">{dashData.name}</h1>
                       <h1 className="text-xl">{dashData.value}</h1>
@@ -46,6 +46,7 @@ const DashData = () => {
                 })
               }
           </div>
+          {buttonValue}
         </div>
       )
     }
