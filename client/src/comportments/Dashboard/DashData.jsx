@@ -32,7 +32,19 @@ const DashData = () => {
 
     if(RoleUser !== null && EmailUser !== null){
       return (
-        <div>DashData</div>
+        <div>
+          <div className="lg:grid grid-cols-4 gap-4 my-8 mx-4">
+              {
+                allDataCout.map((dashData) => {
+                  return (
+                    <div className="bg-purple-400 text-white rounded-xl text-center py-8 px-16">
+                      Hi all
+                    </div>
+                  )
+                })
+              }
+          </div>
+        </div>
       )
     }
     else{
