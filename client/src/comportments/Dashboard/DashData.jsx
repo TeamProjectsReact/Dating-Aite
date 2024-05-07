@@ -21,10 +21,10 @@ const DashData = () => {
   }
 
   const allDataCout = [
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
-    {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Reports", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Posts", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Womens", icon: "", value: <CountUp end={20} />, btnValue: ""},
+    {name: "Mens", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},
     {name: "", icon: "", value: <CountUp end={20} />, btnValue: ""},    
