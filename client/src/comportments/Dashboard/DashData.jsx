@@ -20,6 +20,14 @@ const DashData = () => {
       SetButtonValue(clickValue)   
   }
 
+  //   check the current login user is update the personal Data
+  const [isUpdateData, SetisUpdateData] = useState([])
+    useEffect(() => {
+        axios.get('http://localhost:8081/isDataUpdated/' + EmailUser)
+        .then(res => SetisUpdateData(res.data))
+        .catch(err => console.log(err))
+    }, [])
+
   const allDataCout = [
     {id: 1, name: "Reports", icon: "help-circle", value: <CountUp end={20} />, btnValue: "reports"},
     {id: 2, name: "Posts", icon: "document", value: <CountUp end={20} />, btnValue: "posts"},
