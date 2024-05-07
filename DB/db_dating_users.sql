@@ -27,14 +27,14 @@ CREATE TABLE `users` (
   `Email` varchar(150) NOT NULL,
   `Username` varchar(45) NOT NULL,
   `Password` varchar(100) NOT NULL,
-  `Address` varchar(150) DEFAULT NULL,
+  `Role` varchar(30) NOT NULL,
   `gender` varchar(20) DEFAULT NULL,
   `mobile` varchar(15) DEFAULT NULL,
   `join_at` date NOT NULL,
   `is_active` int NOT NULL,
   `is_lock` int NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,6 +43,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'jehan@123.com','jehan','$2a$10$qUkwlyAXjip9Qq5kIonFA.zJcdpAzWDlDCNvOmMOgYkN/kYu7bY4O','user',NULL,NULL,'2024-05-06',1,0),(2,'jehan@456.com','jehan','$2a$10$zkLWu6GpYfvAUO71GARCsOvTU86FKGwXQ/6RbSX6QGUyf2G4jIol6','SuperAdmin',NULL,NULL,'2024-05-06',1,0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +56,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-05-02 16:14:24
+-- Dump completed on 2024-05-07  7:29:15
