@@ -21,13 +21,6 @@ const Dashboard = () => {
       SetButtonValue(clickValue)   
   }
 
-//   check the current login user is update the personal Data
-  const [isUpdateData, SetisUpdateData] = useState([])
-    useEffect(() => {
-        axios.get('http://localhost:8081/isDataUpdated/' + EmailUser)
-        .then(res => SetisUpdateData(res.data))
-        .catch(err => console.log(err))
-    }, [])
 
   const allUserSide = [
       {id: 1, name: "Dashboard", link: "#", icon: <Icons name="home" size="large"></Icons>, btnValue: 0},
