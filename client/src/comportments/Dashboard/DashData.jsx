@@ -120,7 +120,7 @@ const DashData = () => {
                   <p className="my-2"><span className="text-pink-500 font-semibold">Covid Vaccinated: </span> Yes</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">Accept Dating for: </span> 5 days</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">Accept : </span> Yes</p>
-                  <button className="bg-pink-400 py-4 px-8 rounded-xl duration-500 hover:ml-2">Update</button>
+                  <button className="bg-pink-400 py-4 px-8 text-white rounded-xl duration-500 hover:ml-2">Update</button>
                 </div>
               </div>
 
