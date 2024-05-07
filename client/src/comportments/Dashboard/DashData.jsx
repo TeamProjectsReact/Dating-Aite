@@ -109,14 +109,16 @@ const DashData = () => {
                   <p className="my-2"><span className="text-pink-500 font-semibold">Last Name: </span> kandy</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">NIC/Passport No: </span> 123456789V</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">Address: </span> 88, ABC Street, XYZ</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Mobile: </span> +94 xxxxxxxxx</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">location: </span> USA</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">Gender: </span> Male</p>
                   <p className="my-2"><span className="text-pink-500 font-semibold">Partners: </span> Female</p>
                 </div>
                 <div className="">
                   <p className="my-2"><span className="text-pink-500 font-semibold">Accept Pets: </span> No</p>
-                  <p className="my-2"><span className="text-pink-500 font-semibold">Email: </span> jehan@123.com</p>
-                  <p className="my-2"><span className="text-pink-500 font-semibold">First Name: </span> Jehankandy</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Accept Drinks: </span> Yes</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Covid Vaccinated: </span> Yes</p>
+                  <p className="my-2"><span className="text-pink-500 font-semibold">Accept Dating for: </span> 5 days</p>
                 </div>
               </div>
             </div>
