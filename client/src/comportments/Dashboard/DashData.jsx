@@ -21,6 +21,10 @@ const DashData = () => {
   const [buttonValue, SetButtonValue] = useState(0)
   const HeadleButtonClick = (clickValue) => {
       SetButtonValue(clickValue)   
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
   }
 
   //   check the current login user is update the personal Data
@@ -42,7 +46,12 @@ const DashData = () => {
   ]
 
     if(RoleUser !== null && EmailUser !== null){
-      if(buttonValue === 0){
+      if(buttonValue === "MyData"){
+        return (
+          <MyData />
+        )
+      }
+      else{
         return (
           <div>
             <div className="">
@@ -127,16 +136,10 @@ const DashData = () => {
                 </div>
   
               </div>
-            </div>          
+            </div>
           </div>
         )
-      }
-      else if(buttonValue === "MyData"){
-        return (
-          <MyData />
-        )
-      }
-
+      }   
     }
     else{
       useEffect(() => {
