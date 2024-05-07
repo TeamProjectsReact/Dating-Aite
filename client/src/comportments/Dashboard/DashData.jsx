@@ -1,8 +1,10 @@
 import Icons from "@reacticons/ionicons"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import  secureLocalStorage  from  "react-secure-storage"
 import CountUp from 'react-countup';
+import axios from "axios";
+
 
 const DashData = () => {
     const navigate = useNavigate() 
@@ -45,12 +47,12 @@ const DashData = () => {
             (() => {
               if(isUpdateData !== null){
                 return (
-                  <div className=""></div>
+                  <div className="">user in database</div>
                 )
               }
               else{
                 return (
-                  <div className=""></div>
+                  <div className="">no user</div>
                 )
               }
             })()
