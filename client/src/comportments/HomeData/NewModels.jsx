@@ -29,13 +29,12 @@ const NewModels = () => {
                     )
                 })
             }
+        </div>
             <Link>
                 <div className="">
-                    <button className='py-2 px-8 rounded bg-pink-500 text-white duraion-5000 hover:bg-pink-600'>Browse More</button>
+                    <button className='py-2 px-8 rounded bg-pink-500 text-white duration-500 hover:bg-pink-600'>Browse More</button>
                 </div>
             </Link>
-
-        </div>
     </div>
   )
 }
