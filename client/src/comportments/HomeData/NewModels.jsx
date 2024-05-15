@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const NewModels = () => {
     const girls = [
@@ -28,6 +29,12 @@ const NewModels = () => {
                     )
                 })
             }
+            <Link>
+                <div className="">
+                    <button className='py-2 px-8 rounded bg-pink-500 text-white duraion-5000 hover:bg-pink-600'>Browse More</button>
+                </div>
+            </Link>
+
         </div>
     </div>
   )
