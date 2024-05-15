@@ -4,15 +4,14 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import LoveImage from '../../assets/lvoe.png'
 import MyIcon from '@reacticons/ionicons';
-import Girls from '../HomeData/Girls';
-import Mens from '../HomeData/Mens';
-import LoveStories from '../HomeData/LoveStories';
-import Posts from '../HomeData/Posts';
 import SignIn from '../SignInSignUp/SignIn';
 import SignUp from '../SignInSignUp/SignUp';
 import { Link, useNavigate } from 'react-router-dom';
 import  secureLocalStorage  from  "react-secure-storage";
 import CountUp from 'react-countup';
+import NewModels from '../HomeData/NewModels';
+
+
 
 const HomePage = () => {
     // https://wallpapercave.com/wp/wp8675176.jpg
@@ -164,12 +163,6 @@ const HomePage = () => {
           <Fade>
             <div className="my-24">
                 <div className="lg:flex">
-                  <div className="w-full bg-pink-500 py-36 px-16 text-white">
-                    <p className="lg:text-2xl py-4"><MyIcon name='heart'></MyIcon> <span className="px-1"> Guidlines for Dating</span></p>
-                    <p className="lg:text-2xl py-4"><MyIcon name='heart'></MyIcon> <span className="px-1"> Best, Trusted Love Partners</span></p>
-                    <p className="lg:text-2xl py-4"><MyIcon name='heart'></MyIcon> <span className="px-1"> Real Accounts (No Spam or Fake Accounts)</span></p>
-                    <p className="lg:text-2xl py-4"><MyIcon name='heart'></MyIcon> <span className="px-1"> Best Destinations Datings </span></p>
-                  </div>
                   <div className="h-auto w-full bg-[url(https://wallpapercave.com/wp/wp8829589.jpg)] bg-cover bg-center">
                     <h1 className="py-24 text-center font-semibold text-4xl text-pink-500 love-title">Our Features for Members</h1>
                   </div>
@@ -181,50 +174,9 @@ const HomePage = () => {
       <div className="my-24 lg:mx-20 mx-8">
         <Fade>
           <div className="">
-              <div className="my-20 lg:mx-20 mx-8 lg:flex justify-between">
-                {
-                  viewData.map((dataView) => {
-                    return (
-                      <div className="">
-                        <button onClick={() => HeadleButtonClick(dataView.btnValue)} className="w-full lg:my-0 my-2 border border-pink-500 py-4 px-8 text-pink-500 font-semibold text-xl rounded-full duration-500 hover:bg-pink-500 hover:text-white">{dataView.icons} <span className='mt-2'>{dataView.name}</span></button>
-                      </div>
-                    )
-                  })
-                }
-              </div>
-              <div className="">
-                {
-                  (() => {
-                    if(buttonValue === "Women"){
-                      return (
-                        <Fade>
-                          <Girls />
-                        </Fade>
-                      )
-                    }
-                    if(buttonValue === "Mens"){
-                      return (
-                        <Fade>
-                          <Mens />
-                        </Fade>
-                      )
-                    }
-                    if(buttonValue === "LStories"){
-                      return (
-                        <Fade>
-                          <LoveStories />
-                        </Fade>
-                      )
-                    }
-                    if(buttonValue === "Posts"){
-                      return (
-                        <Fade>
-                          <Posts />
-                        </Fade>
-                      )
-                    }
-                  })()
-                }
+              <div className="my-20 lg:mx-20 mx-8">
+                <h1 className="love-title text-pink-500 text-2xl">Best Models</h1>
+                <NewModels />
               </div>
           </div>
         </Fade>
