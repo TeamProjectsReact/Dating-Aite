@@ -16,24 +16,8 @@ const Mens = () => {
             {
                 girls.map((girl) => {
                     return (
-                        <div className="bg-pink-200 rounded-md shadow-md lg:py-8 py-2 lg:px-12 px-4 lg:my-0 my-4">
-                            <div className="flex justify-between">
-                                <div className="">
-                                    <img src={girl.img} alt="" className='lg:h-40 h-20 w-auto rounded' />
-                                </div>
-                                <div className="">
-                                    <h1 className="">Name: {girl.name}</h1>
-                                    <h1 className="">Age: {girl.age}</h1>
-                                </div>
-                                <div className="">
-                                    <button className='bg-pink-500 text-white font-semibold py-2 px-8 rounded duration-500 hover:bg-pink-600 hover:ml-2'>View More</button>
-                                </div>
-                            </div>
-                            <p className="my-6 lg:visible invisible"><span className="font-semibold">Bio:</span> <br /> {girl.desc}</p>
-
-                            <div className="my-4 lg:visible invisible">
-                                <button className='bg-pink-500 text-white font-semibold py-2 px-8 rounded duration-500 hover:bg-pink-600 hover:ml-2'>View More</button>
-                            </div>
+                        <div className="text-center bg-pink-200 rounded-md shadow-md py-8 px-12 lg:my-0 my-4">
+                            
                         </div>
                     )
                 })
