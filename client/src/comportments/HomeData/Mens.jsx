@@ -22,8 +22,10 @@ const Mens = () => {
                             </div>
                             <h1 className="my-2 font-semibold">{girl.name}</h1>
                             <h1 className="bg-pink-400 py-1 rounded-2xl text-sm text-white mt-1 mb-3">{girl.job}</h1>
-                            <h1 className="">{girl.mobile}</h1>
-                            <h1 className="">{girl.email}</h1>
+                            <div className="mt-4">
+                                <h1 className="">{girl.mobile}</h1>
+                                <h1 className="">{girl.email}</h1>
+                            </div>
                         </div>
                     )
                 })
