@@ -10,7 +10,6 @@ const NewModels = () => {
     ]
   return (
     <div className=''>
-        <h1 className="text-5xl love-title text-pink-500 my-4 text-center">Boys</h1>
         <div className="lg:grid grid-cols-4 gap-4 my-8">
             {
                 girls.map((girl) => {
